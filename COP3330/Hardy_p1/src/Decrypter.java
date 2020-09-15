@@ -5,7 +5,7 @@ public class Decrypter {
         int[] deconverterArray = new int[4];
         for(int i = 0; i <= 3; i++){
             String partOfString = encryptedData.substring(i, i+1); //gets each part of the array
-            Integer x = Integer.valueOf(partOfString); //converts String input to integer
+            int x = Integer.parseInt(partOfString); //converts String input to integer
             switch(x){ //determines value before finding remainder, keeping the original digit plus 7
                 case 7:
                 case 8:
