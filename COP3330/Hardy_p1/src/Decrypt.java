@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-public class Decrypter {
-    public void decrypterMethod(String encryptedData){
+public class Decrypt {
+    public void decryptMethod(String encryptedData){
         int[] deconverterArray = new int[4];
         for(int i = 0; i <= 3; i++){
             String partOfString = encryptedData.substring(i, i+1); //gets each part of the array

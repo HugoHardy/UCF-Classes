@@ -33,7 +33,7 @@ public class Encrypter {
         String encrytedData = Arrays.toString(converterArray);//converts int array to a string
         encrytedData = encrytedData.replaceAll(", ", "").trim().substring(1, 5); //removed brackets, commas, and spaces
         System.out.println(encrytedData);
-        Decrypter obj1 = new Decrypter(); //calls Decrypter class
-        obj1.decrypterMethod(encrytedData); //transfers encrypted data to the decrypter class
+        Decrypt obj1 = new Decrypt(); //calls Decrypter class
+        obj1.decryptMethod(encrytedData); //transfers encrypted data to the decrypter class
     }
 }
