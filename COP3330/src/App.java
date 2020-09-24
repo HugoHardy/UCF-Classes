@@ -22,16 +22,13 @@ public class App {
 
     public static boolean moreInput()
     {
-        boolean check = true;
-        if(getUserWeight() == 0 && getUserHeight() ==0)
-        {
-            check = false;
-        }
-        else
-        {
-            check = false;
-        }
-        return check;
+        System.out.println("Do you need to enter BMI infomation?:");
+        System.out.println("enter 1 for yes \n enter 0 for no");
+        int check; //checks to see if the user is entering additional data
+        Scanner scan = new Scanner(System.in);
+        check = scan.nextInt();
+
+        return true;
     }
 
     public static double getUserHeight() {
@@ -39,7 +36,7 @@ public class App {
 
         int height;
         System.out.println("Please enter a your height in feet: ");
-        do {
+        do { //continues to ask user to enter data until it is a positive integer
 
             Scanner scan = new Scanner(System.in);
             height = scan.nextInt();
@@ -54,7 +51,7 @@ public class App {
     public static double getUserWeight() {
         int weight;
         System.out.println("Please enter a your weight in pounds: ");
-        do{
+        do{ //continues to ask user to enter data until it is a positive integer
             Scanner scan = new Scanner(System.in);
             weight = scan.nextInt();
             if(weight <= 0){

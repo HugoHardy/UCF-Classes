@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf71ded1-4f1f-45b8-9956-5ffbfcb40917" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BodyMassIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BodyMassIndexTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="bf71ded1-4f1f-45b8-9956-5ffbfcb40917" name="Default Changelist" comment="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +62,21 @@
       <option name="presentableId" value="Default" />
       <updated>1600375515048</updated>
     </task>
+    <task id="LOCAL-00001" summary="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work.">
+      <created>1600984055146</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600984055146</updated>
+    </task>
+    <task id="LOCAL-00002" summary="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work.">
+      <created>1600984062467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600984062467</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +91,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work." />
+    <option name="LAST_COMMIT_MESSAGE" value="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work." />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1263" y="403" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600375759538">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -91,6 +104,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600981169923" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1600984066815">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1600984066815" />
     <state x="660" y="297" key="refactoring.ChangeSignatureDialog" timestamp="1600982162065">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
