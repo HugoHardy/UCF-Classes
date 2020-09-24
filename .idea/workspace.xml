@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="81203518-a938-40bf-9d66-2777f0e7c55a" name="Default Changelist" comment="" />
+    <list default="true" id="81203518-a938-40bf-9d66-2777f0e7c55a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/COP3330/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COP3330/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COP3330/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COP3330/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COP3330/.idea/vcs.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,10 +55,33 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1440" y="424" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600375408694">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1440" y="424" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1600375408694" />
+    <state x="1436" y="528" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600375472223">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1436" y="528" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1600375472223" />
     <state x="768" y="338" key="FileChooserDialogImpl" timestamp="1600122990520">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="768" y="338" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1600122990520" />
+    <state x="755" y="321" key="new project wizard" timestamp="1600375512460">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="755" y="321" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1600375512460" />
   </component>
 </project>
