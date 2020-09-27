@@ -19,26 +19,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf71ded1-4f1f-45b8-9956-5ffbfcb40917" name="Default Changelist" comment="created basic options for the user to ask user if they want to enter BMI data">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p1/Hardy_p1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COP3330/Decrypt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COP3330/Encrypter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COP3330/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyMassIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyMassIndexTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1hedVCCrUiccHgh1W0ZXwK5Np7V" />
+  <component name="ProjectId" id="1i6SyOGSy8zs5SezPqQ8grhdlut" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,64 +51,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="Hardy_p2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.App" />
-      </list>
-    </recent_temporary>
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Homework/COP3330" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bf71ded1-4f1f-45b8-9956-5ffbfcb40917" name="Default Changelist" comment="" />
-      <created>1600375515048</created>
+      <changelist id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="" />
+      <created>1601226802247</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1600375515048</updated>
+      <updated>1601226802247</updated>
     </task>
-    <task id="LOCAL-00001" summary="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work.">
-      <created>1600984055146</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1600984055146</updated>
-    </task>
-    <task id="LOCAL-00002" summary="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work.">
-      <created>1600984062467</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1600984062467</updated>
-    </task>
-    <task id="LOCAL-00003" summary="created basic options for the user to ask user if they want to enter BMI data">
-      <created>1600987606246</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1600987606246</updated>
-    </task>
-    <task id="LOCAL-00004" summary="created basic options for the user to ask user if they want to enter BMI data">
-      <created>1601038443079</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1601038443079</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,45 +74,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work." />
-    <MESSAGE value="created basic options for the user to ask user if they want to enter BMI data" />
-    <option name="LAST_COMMIT_MESSAGE" value="created basic options for the user to ask user if they want to enter BMI data" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1263" y="403" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600375759538">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1601226834351">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1263" y="403" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600375759538" />
-    <state x="690" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1600981169923">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="690" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600981169923" />
-    <state width="998" height="295" key="GridCell.Tab.0.bottom" timestamp="1601218103601">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="998" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601218103601" />
-    <state width="998" height="295" key="GridCell.Tab.0.center" timestamp="1601218103601">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="998" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601218103601" />
-    <state width="998" height="295" key="GridCell.Tab.0.left" timestamp="1601218103601">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="998" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601218103601" />
-    <state width="998" height="295" key="GridCell.Tab.0.right" timestamp="1601218103601">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="998" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601218103601" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601038445063">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601038445063" />
-    <state x="660" y="297" key="refactoring.ChangeSignatureDialog" timestamp="1600982162065">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="660" y="297" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600982162065" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
   </component>
 </project>
