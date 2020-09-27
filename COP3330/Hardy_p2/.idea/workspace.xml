@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf71ded1-4f1f-45b8-9956-5ffbfcb40917" name="Default Changelist" comment="Needs doing: Unable to enter main function while loop from moreInput method and fix toUpperCase">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hedVCCrUiccHgh1W0ZXwK5Np7V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="Hardy_p2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf71ded1-4f1f-45b8-9956-5ffbfcb40917" name="Default Changelist" comment="" />
+      <created>1600375515048</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600375515048</updated>
+    </task>
+    <task id="LOCAL-00001" summary="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work.">
+      <created>1600984055146</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600984055146</updated>
+    </task>
+    <task id="LOCAL-00002" summary="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work.">
+      <created>1600984062467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600984062467</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created basic options for the user to ask user if they want to enter BMI data">
+      <created>1600987606246</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600987606246</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created basic options for the user to ask user if they want to enter BMI data">
+      <created>1601038443079</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601038443079</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Needs doing: Unable to enter main function while loop from moreInput method and fix toUpperCase">
+      <created>1601218860547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601218860547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="coded user input for getUserHeight and getUserWeight&#10;Need done: get moreInput to work." />
+    <MESSAGE value="created basic options for the user to ask user if they want to enter BMI data" />
+    <MESSAGE value="Needs doing: Unable to enter main function while loop from moreInput method and fix toUpperCase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Needs doing: Unable to enter main function while loop from moreInput method and fix toUpperCase" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1263" y="403" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600375759538">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1263" y="403" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600375759538" />
+    <state x="690" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1600981169923">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600981169923" />
+    <state width="998" height="295" key="GridCell.Tab.0.bottom" timestamp="1601218897340">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="998" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601218897340" />
+    <state width="998" height="295" key="GridCell.Tab.0.center" timestamp="1601218897340">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="998" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601218897340" />
+    <state width="998" height="295" key="GridCell.Tab.0.left" timestamp="1601218897340">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="998" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601218897340" />
+    <state width="998" height="295" key="GridCell.Tab.0.right" timestamp="1601218897340">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="998" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601218897340" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601218864460">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601218864460" />
+    <state x="660" y="297" key="refactoring.ChangeSignatureDialog" timestamp="1600982162065">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="660" y="297" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1600982162065" />
+  </component>
+</project>
