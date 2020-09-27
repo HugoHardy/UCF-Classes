@@ -4,13 +4,10 @@ import java.util.Scanner;
 import static java.lang.Character.toUpperCase;
 
 public class App {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         ArrayList<BodyMassIndex> bmiData = new ArrayList<BodyMassIndex>();
 
-        while (moreInput())
-        {
-            System.out.println("Entered input method method");
+        while (moreInput()) {
             double height = getUserHeight();
             double weight = getUserWeight();
 
@@ -27,9 +24,9 @@ public class App {
     {
         System.out.println("Do you need to enter BMI information?:");
         System.out.println("enter Y for yes \nenter N for no");
-        Scanner scan = new Scanner(System.in);
-        char checker = scan.next().charAt(0); //checks to see if the user is entering additional data
-        char check.toUpperCase(checker);//turns check to cap in case user inputs a lowercase
+        Scanner scanner = new Scanner(System.in);
+        char check = scanner.next().charAt(0); //checks to see if the user is entering additional data
+        //check.toUpperCase(check);//turns check to cap in case user inputs a lowercase
         if(check == 'Y'){
             return true; //returns true if user wants to input more BMI data
         } else
@@ -43,7 +40,7 @@ public class App {
     public static double getUserHeight() {
         System.out.println("Entered getuserheight method");
         int height = -1;
-        System.out.println("Please enter a your height in feet: ");
+        System.out.print("Please enter a your height in feet: ");
         do { //continues to ask user to enter data until it is a positive integer
             Scanner scan = new Scanner(System.in);
             height = scan.nextInt();
@@ -71,12 +68,16 @@ public class App {
     }
 
     public static void displayBmiInfo(BodyMassIndex bmi) {
+        System.out.println("Height: " + "\nWeight: ");
     }
 
     public static void displayBmiStatistics(ArrayList<BodyMassIndex> bmiData) {
+
+
         System.out.println( "Underweight < 18.5 \n" + //displays BMI information to tell the user what each BMI value represents in terms of approximate health
                             "Normal weight = 18.5–24.9 \n" +
                             "Overweight = 25–29.9 \n" +
                             "Obesity >= 30");
+        System.out.println(); //bmiData;
     }
 }
