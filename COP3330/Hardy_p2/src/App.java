@@ -20,16 +20,11 @@ public class App {
 
     private static boolean moreInput(){
         //prompts the user to enter "Y" or "N" and returns an appropriate boolean value based on their input.
-        System.out.println("Do you need to enter BMI information? " + "enter Y for yes or enter N for no: ");
+        System.out.print("Do you need to enter BMI information? " + "enter Y for yes or enter N for no: ");
         Scanner scanner = new Scanner(System.in);
         char check = scanner.next().charAt(0); //checks to see if the user is entering additional data
-        if(check == 'Y' || check == 'y'){
-            return true; //returns true if user wants to input more BMI data
-        }
-        else
-        {
-            return false; //returns false in case user does not want to input more BMI data
-        }
+        //returns false in case user does not want to input more BMI data
+        return check == 'Y' || check == 'y'; //returns true if user wants to input more BMI data
 
 
     }
