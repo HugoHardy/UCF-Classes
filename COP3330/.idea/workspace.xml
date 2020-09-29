@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Added: Bmi calculator in BodyMassIndex class and created if statements to calculate the category.&#10;Work on: DisplayBmiInfo and DisplayBmiStatitics method, and BodymassIndex class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p2/Hardy_p2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p2/Hardy_p2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p2/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p2/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p2/src/BodyMassIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p2/src/BodyMassIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p2/src/BodyMassIndexTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p2/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p2/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p2/BodyMassIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p2/BodyMassIndex.class" afterDir="false" />
-    </list>
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="work on: displaying ArrayList data.&#10;Issue: displaying ArrayList only returns addresses" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601237099199</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="work on: displaying ArrayList data.&#10;Issue: displaying ArrayList only returns addresses">
+      <created>1601339984206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601339984206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +142,8 @@
     <MESSAGE value="Fixed Hardy_p2 pathing" />
     <MESSAGE value="Fixed moreinput replacing string with char.&#10;Fixed main method while loop now being true.&#10;Work on: DisplayBmiInfo and DisplayBmiStatitics method, and BodymassIndex class" />
     <MESSAGE value="Added: Bmi calculator in BodyMassIndex class and created if statements to calculate the category.&#10;Work on: DisplayBmiInfo and DisplayBmiStatitics method, and BodymassIndex class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: Bmi calculator in BodyMassIndex class and created if statements to calculate the category.&#10;Work on: DisplayBmiInfo and DisplayBmiStatitics method, and BodymassIndex class" />
+    <MESSAGE value="work on: displaying ArrayList data.&#10;Issue: displaying ArrayList only returns addresses" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on: displaying ArrayList data.&#10;Issue: displaying ArrayList only returns addresses" />
   </component>
   <component name="WindowStateProjectService">
     <state x="707" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601254342230">
@@ -170,10 +170,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1350" height="289" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601300438392" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601238053661">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601339987984">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601238053661" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601339987984" />
     <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601299335877">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -186,5 +186,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601299813925" />
+    <state x="623" y="235" key="search.everywhere.popup" timestamp="1601340008127">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1601340008127" />
   </component>
 </project>
