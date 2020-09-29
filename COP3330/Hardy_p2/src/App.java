@@ -1,7 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
-
-import static java.lang.Character.toUpperCase;
 
 public class App {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ public class App {
         displayBmiStatistics(bmiData);
     }
 
-    public static boolean moreInput(){
+    private static boolean moreInput(){
         //prompts the user to enter "Y" or "N" and returns an appropriate boolean value based on their input.
         System.out.println("Do you need to enter BMI information?:");
         System.out.println("enter Y for yes \nenter N for no");
@@ -37,11 +36,11 @@ public class App {
 
     }
 
-    public static double getUserHeight() {
+    private static double getUserHeight() {
         //prompts the user to enter their height in inches and only accepts positive values.
         System.out.println("Entered getuserheight method");
-        int height = -1;
-        System.out.print("Please enter a your height in feet: ");
+        int height;
+        System.out.print("Please enter a your height in inches: ");
         do { //continues to ask user to enter data until it is a positive integer
             Scanner scan = new Scanner(System.in);
             height = scan.nextInt();
@@ -53,10 +52,10 @@ public class App {
         return height;
     }
 
-    public static double getUserWeight() {
+    private static double getUserWeight() {
         //prompts the user to enter their weight in pounds and only accepts positive values.
         System.out.println("Entered getuserweight method");
-        int weight = -1;
+        int weight;
         System.out.println("Please enter a your weight in pounds: ");
         do{ //continues to ask user to enter data until it is a positive integer
             Scanner scan = new Scanner(System.in);
@@ -69,17 +68,18 @@ public class App {
         return weight;
     }
 
-    public static void displayBmiInfo(BodyMassIndex bmi) {
+    private static void displayBmiInfo(BodyMassIndex bmi) {
         //prints out a user's BMi score and category using the data contained in a BodyMassIndex object.
-        System.out.println(bmi);
+        System.out.println("display bmi " + bmi);
     }
 
-    public static void displayBmiStatistics(ArrayList<BodyMassIndex> bmiData) {
+    private static void displayBmiStatistics(ArrayList<BodyMassIndex> bmiData) {
         //prints out the average BMI score of the data.
         System.out.println( "Underweight < 18.5 \n" + //displays BMI information to tell the user what each BMI value represents in terms of approximate health
                             "Normal weight = 18.5–24.9 \n" +
                             "Overweight = 25–29.9 \n" +
                             "Obesity >= 30");
-        System.out.println(bmiData);
+
+        System.out.println("prints out bmiData" + bmiData);
     }
 }
