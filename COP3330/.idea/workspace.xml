@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Fixed: CamelCase of some variables.&#10;Edited: Simplified BmiScore in BodyMassIndex inside BodyMassIndex.java">
-      <change afterPath="$PROJECT_DIR$/Hardy_p2/src/BodyMassIndexTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p2/BodyMassIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p2/BodyMassIndex.class" afterDir="false" />
-    </list>
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601347734565</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created Test for BodyMassIndex.java called BodyMassIndexTest.java">
+      <created>1601349758451</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601349758451</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +192,8 @@
     <MESSAGE value="Fixed: acquired data within the bmi instead of their addresses. &#10;Moved: bmi category calculator from BodyMassIndex.java &gt; BodyMassIndex method to app.java &gt;  displayBmiInfo method&#10;Added: bmi average calculator to displayBmiStatics" />
     <MESSAGE value="Edited: Simplified moreInput if statement to a return statement" />
     <MESSAGE value="Fixed: CamelCase of some variables.&#10;Edited: Simplified BmiScore in BodyMassIndex inside BodyMassIndex.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed: CamelCase of some variables.&#10;Edited: Simplified BmiScore in BodyMassIndex inside BodyMassIndex.java" />
+    <MESSAGE value="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601348935222">
@@ -208,26 +212,42 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1601349344976">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1601350078478">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601349344976" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1601349344976">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1601350078478">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601349344976" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1601349344976">
+    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1601350078478">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601349344976" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1601349344976">
+    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1601350078478">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601349344976" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601347737570">
+    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1601350078478">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601347737570" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1601350078478">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1601350078478">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1601350078478">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601349762191">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601349762191" />
     <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601299335877">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
