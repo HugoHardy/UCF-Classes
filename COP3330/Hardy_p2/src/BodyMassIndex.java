@@ -1,15 +1,16 @@
 public class BodyMassIndex {
-    private double height, weight, bmiscore;
+    private double height, weight, bmiScore;
 
     public BodyMassIndex(double height, double weight) {
         //class contains a public method to calculate a BMI score based on a height and weight value.
         this.height = height;
         this.weight = weight;
-        this.bmiscore = ((703 * weight) / (height*height)); //calculates bmi using empirical values
+        this.bmiScore = ((703 * weight) / Math.pow(height , 2)); //calculates bmi using empirical values
 
     }
 
     public double giveBmi(){
-        return bmiscore;
+
+        return bmiScore;
     }
 }

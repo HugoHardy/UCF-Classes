@@ -18,7 +18,7 @@ public class App {
         displayBmiStatistics(bmiData);
     }
 
-    private static boolean moreInput(){
+    static boolean moreInput(){
         //prompts the user to enter "Y" or "N" and returns an appropriate boolean value based on their input.
         System.out.print("Do you need to enter BMI information? " + "enter Y for yes or enter N for no: ");
         Scanner scanner = new Scanner(System.in);
