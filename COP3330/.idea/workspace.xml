@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Created Test for BodyMassIndex.java called BodyMassIndexTest.java">
+      <change afterPath="$PROJECT_DIR$/Hardy_p3/Hardy_p3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -51,6 +59,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -62,6 +71,9 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
@@ -168,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601349758451</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".">
+      <created>1601350095682</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601350095682</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,12 +207,12 @@
     <MESSAGE value="Fixed moreinput replacing string with char.&#10;Fixed main method while loop now being true.&#10;Work on: DisplayBmiInfo and DisplayBmiStatitics method, and BodymassIndex class" />
     <MESSAGE value="Added: Bmi calculator in BodyMassIndex class and created if statements to calculate the category.&#10;Work on: DisplayBmiInfo and DisplayBmiStatitics method, and BodymassIndex class" />
     <MESSAGE value="work on: displaying ArrayList data.&#10;Issue: displaying ArrayList only returns addresses" />
-    <MESSAGE value="." />
     <MESSAGE value="Fixed: acquired data within the bmi instead of their addresses. &#10;Moved: bmi category calculator from BodyMassIndex.java &gt; BodyMassIndex method to app.java &gt;  displayBmiInfo method&#10;Added: bmi average calculator to displayBmiStatics" />
     <MESSAGE value="Edited: Simplified moreInput if statement to a return statement" />
     <MESSAGE value="Fixed: CamelCase of some variables.&#10;Edited: Simplified BmiScore in BodyMassIndex inside BodyMassIndex.java" />
     <MESSAGE value="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
     <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601348935222">
@@ -204,6 +223,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="415" y="341" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601348933039" />
+    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601761843019">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601761843019" />
     <state x="707" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601254342230">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -244,22 +267,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601349762191">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601350113756">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601349762191" />
-    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601299335877">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601350113756" />
+    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601760333559">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1601299335877" />
+    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1601760333559" />
     <state x="313" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601347877510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="313" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601347877510" />
-    <state x="537" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1601299813925">
+    <state x="597" y="160" key="new project wizard" timestamp="1601760108934">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601299813925" />
+    <state x="597" y="160" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1601760108934" />
+    <state x="537" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1601760515314">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601760515314" />
     <state x="623" y="235" key="search.everywhere.popup" timestamp="1601340008127">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
