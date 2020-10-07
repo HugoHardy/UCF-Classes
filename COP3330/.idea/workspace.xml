@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Created Test for BodyMassIndex.java called BodyMassIndexTest.java">
-      <change afterPath="$PROJECT_DIR$/Hardy_p3/Hardy_p3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="began creating the ShapeTest.java and shape.java">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/Shape2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Shape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,7 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BodyMassIndexTest">
+  <component name="RunManager" selected="JUnit.ShapeTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Hardy_p2" />
@@ -94,8 +96,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hardy_p3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShapeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShapeTest" />
         <item itemvalue="JUnit.BodyMassIndexTest" />
         <item itemvalue="Application.App" />
       </list>
@@ -187,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601350095682</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="began creating the ShapeTest.java and shape.java">
+      <created>1601773336297</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601773336297</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,21 +231,42 @@
     <MESSAGE value="Fixed: CamelCase of some variables.&#10;Edited: Simplified BmiScore in BodyMassIndex inside BodyMassIndex.java" />
     <MESSAGE value="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="began creating the ShapeTest.java and shape.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="began creating the ShapeTest.java and shape.java" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="144" y="199" width="816" height="729" key="#Intentions" timestamp="1602038126795">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="144" y="199" width="816" height="729" key="#Intentions/0.0.1920.1080@0.0.1920.1080" timestamp="1602038126795" />
     <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601348935222">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601348935222" />
+    <state x="100" y="101" width="988" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602042795759">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="100" y="101" width="988" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602042795759" />
+    <state x="357" y="247" key="#com.intellij.ide.util.MemberChooser" timestamp="1602042762747">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="357" y="247" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1602042762747" />
     <state x="415" y="341" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601348933039">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="415" y="341" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601348933039" />
-    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601761843019">
+    <state x="257" y="417" key="#com.intellij.refactoring.memberPushDown.PushDownDialog" timestamp="1602030231711">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601761843019" />
+    <state x="257" y="417" key="#com.intellij.refactoring.memberPushDown.PushDownDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602030231711" />
+    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602034921797">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602034921797" />
+    <state x="276" y="288" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1602035235899">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="276" y="288" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602035235899" />
     <state x="707" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601254342230">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -235,58 +275,62 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1601350078478">
+    <state width="1128" height="284" key="GridCell.Tab.0.bottom" timestamp="1602042479342">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1601350078478">
+    <state width="1128" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602042479342" />
+    <state width="1128" height="284" key="GridCell.Tab.0.center" timestamp="1602042479342">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1601350078478">
+    <state width="1128" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602042479342" />
+    <state width="1128" height="284" key="GridCell.Tab.0.left" timestamp="1602042479342">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1601350078478">
+    <state width="1128" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602042479342" />
+    <state width="1128" height="284" key="GridCell.Tab.0.right" timestamp="1602042479342">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1601350078478">
+    <state width="1128" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602042479342" />
+    <state width="1128" height="360" key="GridCell.Tab.1.bottom" timestamp="1602039218610">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1601350078478">
+    <state width="1128" height="360" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602039218610" />
+    <state width="1128" height="360" key="GridCell.Tab.1.center" timestamp="1602039218609">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1601350078478">
+    <state width="1128" height="360" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602039218609" />
+    <state width="1128" height="360" key="GridCell.Tab.1.left" timestamp="1602039218609">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1601350078478">
+    <state width="1128" height="360" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602039218609" />
+    <state width="1128" height="360" key="GridCell.Tab.1.right" timestamp="1602039218609">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601350078478" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601350113756">
+    <state width="1128" height="360" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602039218609" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601773340070">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601350113756" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601773340070" />
+    <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="368" y="319" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602034720569" />
     <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601760333559">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1601760333559" />
-    <state x="313" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601347877510">
+    <state x="313" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602035189325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="313" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601347877510" />
+    <state x="313" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602035189325" />
     <state x="597" y="160" key="new project wizard" timestamp="1601760108934">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="597" y="160" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1601760108934" />
-    <state x="537" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1601760515314">
+    <state x="537" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1602038516278">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601760515314" />
+    <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602038516278" />
     <state x="623" y="235" key="search.everywhere.popup" timestamp="1601340008127">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
