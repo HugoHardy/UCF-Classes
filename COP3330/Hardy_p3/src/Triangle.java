@@ -12,7 +12,6 @@ public class Triangle extends Shape2D {
 
     @Override
     public double getArea() {
-        area = length * height / 2;
-        return area;
+        return area = length * height / 2;
     }
 }
