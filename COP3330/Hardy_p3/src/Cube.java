@@ -1,5 +1,5 @@
 public class Cube extends Shape3D {
-    private double length;
+    private final double length;
     public Cube(double length) {
         this.length = length;
     }
@@ -9,7 +9,7 @@ public class Cube extends Shape3D {
     }
     @Override
     public double getArea() {
-        return area = length * length;
+        return area = 6 * (length * length);
     }
     @Override
     public double getVolume() {

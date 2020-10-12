@@ -1,5 +1,5 @@
 public class Circle extends Shape2D {
-    private double radius;
+    private final double radius;
     public Circle(double radius) {
         this.radius = radius;
     }
