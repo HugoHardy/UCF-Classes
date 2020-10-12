@@ -19,20 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Added: Triangle class Extending Shape2D and area override methods.&#10;Added: Shape3D class Extending Shape2D extending and volume method.&#10;Added: Cube class Extending Shape3D and override methods">
-      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/Pyramid.java" afterDir="false" />
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Fixed: assertEquals error online 77&#10;Added: Pyramid name and first surface area test.&#10;Added: Pyramid class extending Shape3D and necessary methods">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p3/src/Sphere.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Cube.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Shape2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Shape2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Shape3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Shape3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Pyramid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/Shape2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/Shape2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/Cube.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/Cube.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/Shape3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/Shape3D.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/ShapeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/ShapeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/Triangle.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602181701280</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed: assertEquals error online 77&#10;Added: Pyramid name and first surface area test.&#10;Added: Pyramid class extending Shape3D and necessary methods">
+      <created>1602527922905</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602527922905</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +259,8 @@
     <MESSAGE value="began creating the ShapeTest.java and shape.java" />
     <MESSAGE value="Added: Square class and Triangle class and created getName and getArea methods for both&#10;Fixed: Triangle and Square now extends Shapes2D which extends Shapes" />
     <MESSAGE value="Added: Triangle class Extending Shape2D and area override methods.&#10;Added: Shape3D class Extending Shape2D extending and volume method.&#10;Added: Cube class Extending Shape3D and override methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: Triangle class Extending Shape2D and area override methods.&#10;Added: Shape3D class Extending Shape2D extending and volume method.&#10;Added: Cube class Extending Shape3D and override methods" />
+    <MESSAGE value="Fixed: assertEquals error online 77&#10;Added: Pyramid name and first surface area test.&#10;Added: Pyramid class extending Shape3D and necessary methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed: assertEquals error online 77&#10;Added: Pyramid name and first surface area test.&#10;Added: Pyramid class extending Shape3D and necessary methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="144" y="199" width="816" height="729" key="#Intentions" timestamp="1602038126795">
@@ -305,22 +311,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1128" height="360" key="GridCell.Tab.0.bottom" timestamp="1602527727864">
+    <state width="1128" height="284" key="GridCell.Tab.0.bottom" timestamp="1602545359211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602527727864" />
-    <state width="1128" height="360" key="GridCell.Tab.0.center" timestamp="1602527727864">
+    <state width="1128" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602545359211" />
+    <state width="1128" height="284" key="GridCell.Tab.0.center" timestamp="1602545359211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602527727864" />
-    <state width="1128" height="360" key="GridCell.Tab.0.left" timestamp="1602527727864">
+    <state width="1128" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602545359211" />
+    <state width="1128" height="284" key="GridCell.Tab.0.left" timestamp="1602545359211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602527727864" />
-    <state width="1128" height="360" key="GridCell.Tab.0.right" timestamp="1602527727864">
+    <state width="1128" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602545359211" />
+    <state width="1128" height="284" key="GridCell.Tab.0.right" timestamp="1602545359211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602527727864" />
+    <state width="1128" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602545359211" />
     <state width="1128" height="360" key="GridCell.Tab.1.bottom" timestamp="1602527727864">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -337,10 +343,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1128" height="360" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602527727864" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602180785135">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602527927505">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602180785135" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602527927505" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -357,10 +363,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="597" y="160" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1601760108934" />
-    <state x="537" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1602042966418">
+    <state x="537" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1602543443554">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602042966418" />
+    <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602543443554" />
     <state x="623" y="235" key="search.everywhere.popup" timestamp="1601340008127">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
