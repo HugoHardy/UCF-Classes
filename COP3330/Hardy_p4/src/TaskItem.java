@@ -2,16 +2,24 @@
 
 public class TaskItem {
     //LocalDate;
-    private String task;
+    private String taskName;
+    private String taskDescription;
     private String date;
-    public TaskItem(String task, String date){
-        if(!creatingTaskItemFailsWithInvalidTitle() || creatingTaskItemSucceedsWithValidTitle()){
-            this.task = task;
+    public TaskItem(String taskName, String description,String date){
+
+        if(isTaskNameValid()){
+            this.taskName = taskName;
         } else {
-            new IllegalArgumentException("Task title not valid, please enter a new Task name");
+            new IllegalArgumentException("task name is invalid, please enter a new task name");
+
+        }
+        if(isTaskDescriptionValid()){
+            this.taskDescription = description;
+        } else {
+            new IllegalArgumentException("Description invalid, please enter a new description");
         }
 
-        if(!creatingTaskItemFailsWithInvalidTitle() || creatingTaskItemSucceedsWithValidTitle()){
+        if(isDateValid()){
             this.date = date;
         } else{
             new IllegalArgumentException("Date invalid, please enter a new date (YYYY-MM-DD): ");
@@ -19,30 +27,47 @@ public class TaskItem {
 
 
     }
-    public String getTaskName() {
-        return this.task;
+
+    public String getTaskName(){
+        return this.taskName;
+    }
+
+    public String getTaskDescription(){
+        return this.taskDescription;
     }
     public String getTaskDate(){
+
         return this.date;
     }
-    //creatingTaskItemFailsWithInvalidDueDate()
-    private boolean creatingTaskItemFailsWithInvalidTitle(){
-        return task.length() <= 0;
+
+    public boolean isTaskNameValid(){
+        return taskName.length() > 0;
     }
 
-
-    //creatingTaskItemSucceedsWithValidDueDate()
-    private boolean creatingTaskItemSucceedsWithValidTitle(){
-        return task.length() > 0;
+    private boolean isTaskDescriptionValid(){
+        return taskDescription.length() > 0;
     }
-    private boolean settingTaskItemDueDateFailsWithInvalidDate(){
+    private boolean isDateValid(){
+
         return true;
     }
-    private boolean settingTaskItemDueDateSucceedsWithValidDate(){
-        return true;
-    }
-    //settingTaskItemTitleFailsWithInvalidTitle()
-    //settingTaskItemTitleSucceedsWithValidTitle()
-
 }
-//InvalidTaskItemTitle
+class InvalidNameException extends IllegalArgumentException {
+    public InvalidNameException(String msg) {
+
+        super(msg);
+    }
+}
+class InvalidDescriptionException extends IllegalArgumentException {
+    public InvalidDescriptionException(String msg) {
+
+        super(msg);
+    }
+}
+
+class InvalidDateException extends IllegalArgumentException {
+    public InvalidDateException(String msg) {
+
+        super(msg);
+    }
+}

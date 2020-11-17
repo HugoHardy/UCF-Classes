@@ -19,17 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Added: Sphere extending Shape3D and necessary methods&#10;Completed: All test passed">
-      <change afterPath="$PROJECT_DIR$/Hardy_p4/Hardy_p4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hardy_p4/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hardy_p4/src/TaskItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hardy_p4/src/TaskList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modified Cesar Cipher/Modified Cesar Cipher.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../midterm/midterm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Fixed: TaskList -&gt; write: renaming of Item.getTaskname to Item.getTaskName">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p3/src/ShapeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p3/ShapeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p3/ShapeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p4/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p4/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p4/src/TaskItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p4/src/TaskItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p4/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p4/src/TaskList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +53,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -85,7 +80,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShapeTest">
+  <component name="RunManager" selected="Application.App (1)">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="Hardy_p4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Hardy_p2" />
@@ -113,9 +115,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.ShapeTest" />
         <item itemvalue="JUnit.BodyMassIndexTest" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602545476372</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Created: Class App, TaskItem, TaskList&#10;Created: Menu&#10;Created: TaskItem constructor&#10;Created: array of TaskItem and writing method to storage">
+      <created>1605409977543</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605409977543</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixed: TaskList -&gt; write: renaming of Item.getTaskname to Item.getTaskName">
+      <created>1605410093311</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1605410093311</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +287,9 @@
     <MESSAGE value="Added: Triangle class Extending Shape2D and area override methods.&#10;Added: Shape3D class Extending Shape2D extending and volume method.&#10;Added: Cube class Extending Shape3D and override methods" />
     <MESSAGE value="Fixed: assertEquals error online 77&#10;Added: Pyramid name and first surface area test.&#10;Added: Pyramid class extending Shape3D and necessary methods" />
     <MESSAGE value="Added: Sphere extending Shape3D and necessary methods&#10;Completed: All test passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: Sphere extending Shape3D and necessary methods&#10;Completed: All test passed" />
+    <MESSAGE value="Created: Class App, TaskItem, TaskList&#10;Created: Menu&#10;Created: TaskItem constructor&#10;Created: array of TaskItem and writing method to storage" />
+    <MESSAGE value="Fixed: TaskList -&gt; write: renaming of Item.getTaskname to Item.getTaskName" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed: TaskList -&gt; write: renaming of Item.getTaskname to Item.getTaskName" />
   </component>
   <component name="WindowStateProjectService">
     <state x="144" y="199" width="816" height="729" key="#Intentions" timestamp="1602038126795">
@@ -281,10 +300,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="0" y="118" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1605387759425" />
-    <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601348935222">
+    <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605551211182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601348935222" />
+    <state x="140" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605551211182" />
     <state x="100" y="101" width="988" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602042795759">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -305,18 +324,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="257" y="417" key="#com.intellij.refactoring.memberPushDown.PushDownDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602030231711" />
-    <state x="371" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602180303002">
+    <state x="371" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605545696721">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="371" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602180303002" />
+    <state x="371" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605545696721" />
     <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602034921797">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602034921797" />
-    <state x="276" y="288" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605408430954">
+    <state x="276" y="288" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605560246591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="276" y="288" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605408430954" />
+    <state x="276" y="288" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605560246591" />
     <state x="707" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601254342230">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -325,22 +344,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1128" height="360" key="GridCell.Tab.0.bottom" timestamp="1602546324275">
+    <state width="988" height="293" key="GridCell.Tab.0.bottom" timestamp="1605577276966">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602546324275" />
-    <state width="1128" height="360" key="GridCell.Tab.0.center" timestamp="1602546324275">
+    <state width="988" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605577276966" />
+    <state width="988" height="293" key="GridCell.Tab.0.center" timestamp="1605577276966">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602546324275" />
-    <state width="1128" height="360" key="GridCell.Tab.0.left" timestamp="1602546324275">
+    <state width="988" height="293" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605577276966" />
+    <state width="988" height="293" key="GridCell.Tab.0.left" timestamp="1605577276966">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602546324275" />
-    <state width="1128" height="360" key="GridCell.Tab.0.right" timestamp="1602546324275">
+    <state width="988" height="293" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605577276966" />
+    <state width="988" height="293" key="GridCell.Tab.0.right" timestamp="1605577276966">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1128" height="360" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602546324275" />
+    <state width="988" height="293" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605577276966" />
     <state width="1128" height="360" key="GridCell.Tab.1.bottom" timestamp="1602546324275">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -357,10 +376,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1128" height="360" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602546324275" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602545803546">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1605410097382">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602545803546" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1605410097382" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -369,6 +388,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1601760333559" />
+    <state x="1240" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605573752757">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1240" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1605573752757" />
     <state x="313" y="301" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602035189325">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
