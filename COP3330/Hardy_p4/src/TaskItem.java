@@ -5,21 +5,21 @@ public class TaskItem {
     private String taskName;
     private String taskDescription;
     private String date;
-    public TaskItem(String taskName, String description,String date){
+    public TaskItem(String taskName, String description, String date){
 
-        if(isTaskNameValid()){
+        if(isTaskNameValid(taskName)){
             this.taskName = taskName;
         } else {
             new IllegalArgumentException("task name is invalid, please enter a new task name");
 
         }
-        if(isTaskDescriptionValid()){
+        if(isTaskDescriptionValid(description)){
             this.taskDescription = description;
         } else {
             new IllegalArgumentException("Description invalid, please enter a new description");
         }
 
-        if(isDateValid()){
+        if(isDateValid(date)){
             this.date = date;
         } else{
             new IllegalArgumentException("Date invalid, please enter a new date (YYYY-MM-DD): ");
@@ -40,14 +40,14 @@ public class TaskItem {
         return this.date;
     }
 
-    public boolean isTaskNameValid(){
+    public boolean isTaskNameValid(String taskName){
         return taskName.length() > 0;
     }
 
-    private boolean isTaskDescriptionValid(){
-        return taskDescription.length() > 0;
+    private boolean isTaskDescriptionValid(String description){
+        return description.length() > 0;
     }
-    private boolean isDateValid(){
+    private boolean isDateValid(String date){
 
         return true;
     }
