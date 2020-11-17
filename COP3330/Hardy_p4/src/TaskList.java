@@ -25,6 +25,9 @@ public class TaskList {
             e.printStackTrace();
         }
     }
+   /* public  getList(){
+        return Tasks.g;
+    }*/
 
     public void addTaskData(TaskItem data){
         Tasks.add(data);

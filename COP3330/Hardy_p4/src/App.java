@@ -138,7 +138,7 @@ public class App {
             data = new TaskItem(contentDate, contentName, contentDescription);
             storeTaskData(data);
         }
-        System.out.println();
+        //System.out.println(TaskList);
     }
 
     private void listOperationMenu(String txt) {
