@@ -9,7 +9,7 @@ public class TaskList {
         Tasks = new ArrayList<>();
     }
 
-    public static void writeList(String listName) { //creates a freshlist
+    public static void writeList(String listName) { //creates a fresh list
         try(Formatter output = new Formatter(listName)) {
             for(int i = 0; i < Tasks.size(); i++) {
                 TaskItem Item = Tasks.get(i);
@@ -19,11 +19,11 @@ public class TaskList {
             e.printStackTrace();
         }
     }
-    private void ReadList(){
+    private void ReadList(){ //reads the data specified folder
 
 
     }
 
-    public void addTaskData(TaskItem data){
+    public void addTaskData(TaskItem data){//stores information into the array list
         Tasks.add(data);
     }}

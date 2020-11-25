@@ -25,7 +25,7 @@ public class App {
         AppSelectionInput();
     }
 
-    private void AppSelectionInput() {
+    private void AppSelectionInput() {//user input methods to select the application
         do{
             try {
                 appInput = input.nextInt();
@@ -50,7 +50,7 @@ public class App {
         }while(appInput < 2 || appInput > 0);
     }
 
-    private void ListMenu() {
+    private void ListMenu() {//menu which lists out the choice after user selected an application
         System.out.print("Main menu");
         System.out.println();
         System.out.println("--------");
@@ -62,7 +62,7 @@ public class App {
         MenuInput();
     }
 
-    private void MenuInput() {
+    private void MenuInput() {//menu input to select which app function to choose from
         do {
             try {
                 menuInput = input.nextInt();
@@ -70,7 +70,7 @@ public class App {
                     ListCreation();
                 } else if (menuInput == 2) {
                     System.out.println("Loading list");
-                    //TaskListLoading();
+                    //ListLoading();
                 } else if (menuInput == 3) {
                     ListMenu();
                     System.out.println("returning to App selection");
@@ -88,7 +88,7 @@ public class App {
 
     }
 
-    private void ListCreation() {
+    private void ListCreation() {//asks user for the name of the new list and uses the appInput variable value to specify which app the user is using
         String ListName;
         System.out.println("Enter name of of the new list");
         ListName = input.nextLine();
