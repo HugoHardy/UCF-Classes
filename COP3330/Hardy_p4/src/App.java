@@ -16,6 +16,7 @@ public class App {
         A.mainMenu();
     }
     public App(){
+
         taskList = new TaskList();
     }
     private void mainMenu(){
