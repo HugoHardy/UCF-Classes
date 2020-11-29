@@ -8,6 +8,7 @@ public class App {
     private int appInput = 0; //maintains the choice of which app the user chooses
     private int menuInput = 0;
     private String listName;
+    private TaskItem data;
 
     //private ContactList contactList;
     public static void main(String[] args) {
@@ -138,16 +139,18 @@ public class App {
             try {
                 int OperationInput = input.nextInt();
                 if (OperationInput == 1) { //view list
-                    //TaskList.LoadList(listName);
                     TaskList.ReadList(listName);
                 } else if (OperationInput == 2) { //add an item
-                    TaskList.AddTaskData();
+                    data = TaskList.GetData();
+                    TaskList.AddTaskData(data);
                     System.out.println("items added");
                 } else if (OperationInput == 3) { //edit an item
-                    //TaskList.EditTaskData();
+                    TaskList.EditPrompt();
+                    TaskList.EditTaskData();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 4) { //remove an item
-                    //TaskList.RemoveTaskData();
+                    TaskList.RemovePrompt();
+                    TaskList.RemoveTaskData();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 5) { //mark an item as completed
                     //TaskList.MarkTaskAsComplete();

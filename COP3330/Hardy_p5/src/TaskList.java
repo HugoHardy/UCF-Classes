@@ -67,45 +67,54 @@ public class TaskList {
 
         String content;
         int i  = 0;
-        if((content = read.readLine()) == null){
+        if(read.readLine() == null){
             System.out.println("List is empty");
         } else {
             while ((content = read.readLine()) != null) {
-
+                TaskItem data;
                 try {
                     String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
                     String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
                     String description = content.substring(content.indexOf(":") + 2);
                     //data = new TaskItem(date, taskName, description);
                     System.out.println(i + ") " + content);
-                    Tasks.add(new TaskItem(date, taskName, description));// returns NullPointerException
+                    data = new TaskItem(date, taskName, description);// returns NullPointerException
+                    System.out.println("Data passed");
+                    AddTaskData(data);
+                    System.out.println("Add data passed");
                     //data = new TaskItem(date, taskName, description);// data is stored to TaskItem
                     //SaveTaskDataToTemp(data);
                     i++;
+                    System.out.println("index passed");
                 } catch (NullPointerException e) {
-                    throw new NullPointerException("ERROR: ");
+                    throw new NullPointerException("ERROR: data null!");
                 }
             }
         }
     }
-
-    public static void AddTaskData(){
-        while(true){
-            int i = 0;
-            try{
+    public static TaskItem GetData(){
+        TaskItem data = null;
+        try{
                 String dateInput = getDate();
                 String taskNameInput = getTaskName();
                 String descriptionInput = getDescriptionName();
-                Tasks.add(new TaskItem(dateInput, taskNameInput, descriptionInput));
-                System.out.println("information inside data from AddTaskData " + Tasks.get(i));
-                i++;
-                break;
+                data = new TaskItem(dateInput, taskNameInput, descriptionInput);
+        } catch (InvalidDescriptionException e){
+            System.out.print("Warning: description is invalid, please reenter ");
+        }
+        return data;
+    }
+    public static void AddTaskData(TaskItem data){
+            try{
+                /*String dateInput = getDate();
+                String taskNameInput = getTaskName();
+                String descriptionInput = getDescriptionName();
+                Tasks.add(new TaskItem(dateInput, taskNameInput, descriptionInput));*/
+                Tasks.add(data);
+                //System.out.println("information inside data from AddTaskData " + Tasks);
             } catch (InvalidDescriptionException e){
                 System.out.print("Warning: description is invalid, please reenter ");
             }
-        }
-
-        //return data;
     }
     private static String getTaskName(){
         System.out.print("Please enter task name: ");
@@ -122,6 +131,18 @@ public class TaskList {
     /*public static void SaveTaskDataToTemp(TaskItem data){//stores information into the array list
         Tasks.add(data);
     }*/
+    public static void EditPrompt(){
+        System.out.println("Please choose a task to edit: ");
+    }
+    public static void EditTaskData(){
+        Tasks.add(input.nextInt(), new TaskItem(getDate(), getTaskName(), getDescriptionName()));
+    }
+    public static void RemovePrompt(){
+        System.out.println("Please choose task to remove: ");
+    }
+    public static void RemoveTaskData(){
+        Tasks.remove(input.nextInt());
+    }
 
 }
 
