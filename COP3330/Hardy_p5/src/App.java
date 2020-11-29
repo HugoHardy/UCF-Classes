@@ -19,6 +19,7 @@ public class App {
         System.out.println("-----------------------");
         System.out.println("1) Task list");
         System.out.println("2) Contact list");
+        System.out.println("3) Exit Program");
         System.out.print("Please choose one of them options above: ");
         AppSelectionInput();
     }
@@ -31,8 +32,10 @@ public class App {
                     ListMenu();
                     MenuInput();
                 } else if (appInput == 2) {
-                    ListMenu();
-                    MenuInput();
+                    System.out.println("ERROR: Application not available yet");
+                    AppSelection();
+                    //ListMenu();
+                    //MenuInput();
                 } else if (appInput == 3) {
                     System.out.println("Exiting Application Selection");
                     System.exit(-1);

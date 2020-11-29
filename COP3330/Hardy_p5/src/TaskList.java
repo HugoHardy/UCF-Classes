@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class TaskList {
     private static final Scanner input = new Scanner(System.in);
     private static List<TaskItem> Tasks;
-    private static TaskItem data;
 
     public TaskList() {
         Tasks = new ArrayList<>();
@@ -68,36 +67,44 @@ public class TaskList {
 
         String content;
         int i  = 0;
-        try {
+        if((content = read.readLine()) == null){
+            System.out.println("List is empty");
+        } else {
             while ((content = read.readLine()) != null) {
 
-                String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
-                String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
-                String description = content.substring(content.indexOf(":") + 2);
-                //data = new TaskItem(date, taskName, description);
-                System.out.println(i + ") " + content);
-                data = new TaskItem(date, taskName, description);// data is stored to TaskItem
-                SaveTaskDataToTemp(data);
-                i++;
+                try {
+                    String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
+                    String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
+                    String description = content.substring(content.indexOf(":") + 2);
+                    //data = new TaskItem(date, taskName, description);
+                    System.out.println(i + ") " + content);
+                    Tasks.add(new TaskItem(date, taskName, description));// returns NullPointerException
+                    //data = new TaskItem(date, taskName, description);// data is stored to TaskItem
+                    //SaveTaskDataToTemp(data);
+                    i++;
+                } catch (NullPointerException e) {
+                    throw new NullPointerException("ERROR: ");
+                }
             }
-        } catch (NullPointerException e){
-            throw new NullPointerException("ERROR: ");
         }
     }
 
     public static void AddTaskData(){
         while(true){
+            int i = 0;
             try{
                 String dateInput = getDate();
                 String taskNameInput = getTaskName();
                 String descriptionInput = getDescriptionName();
-                data = new TaskItem(dateInput, taskNameInput, descriptionInput);
+                Tasks.add(new TaskItem(dateInput, taskNameInput, descriptionInput));
+                System.out.println("information inside data from AddTaskData " + Tasks.get(i));
+                i++;
                 break;
             } catch (InvalidDescriptionException e){
                 System.out.print("Warning: description is invalid, please reenter ");
             }
         }
-        System.out.println("information inside data from AddTaskData " + data);
+
         //return data;
     }
     private static String getTaskName(){
@@ -112,9 +119,9 @@ public class TaskList {
         System.out.print("Please enter Date with the YYYY-MM-DD format: ");
         return input.nextLine();
     }
-    public static void SaveTaskDataToTemp(TaskItem data){//stores information into the array list
+    /*public static void SaveTaskDataToTemp(TaskItem data){//stores information into the array list
         Tasks.add(data);
-    }
+    }*/
 
 }
 
