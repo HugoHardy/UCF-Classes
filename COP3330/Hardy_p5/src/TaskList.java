@@ -2,20 +2,35 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskList {
+    private static final Scanner input = new Scanner(System.in);
     private static List<TaskItem> Tasks;
+    private static TaskItem data;
 
     public TaskList() {
         Tasks = new ArrayList<>();
     }
+    public static void lisCreation(String listName) throws FileNotFoundException {// creates a new list text file with a user specified name
 
-    public static void writeList(String listName) { //creates a fresh list
-        try(Formatter output = new Formatter(listName)) {
-            for(int i = 0; i < Tasks.size(); i++) {
-                TaskItem Item = Tasks.get(i);
-                output.format("[%s%] %s: s%n",Item.getTaskDate(), Item.getTaskName(), Item.getTaskDescription() );
+            if (listName.endsWith(".txt")) { //checks to see if user inputs file extension
+                new Formatter(listName);
+            } else {
+                new Formatter(listName + ".txt");
             }
+          System.out.println("New task list has been created");
+
+
+    }
+
+    public static void WriteToList(String FileName) { //creates a fresh list
+        try(Formatter output = new Formatter(FileName)) {
+            for (TaskItem Item : Tasks) {
+                output.format("[%s%] %s: s%n", Item.getTaskDate(), Item.getTaskName(), Item.getTaskDescription());
+            }
+        } catch(NullPointerException e){
+            throw new NullPointerException("ERROR: Data not saved");
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -30,6 +45,7 @@ public class TaskList {
             FilenameFilter filter = (f1, name) -> name.endsWith(".txt");
             pathnames = f.list(filter);
 
+            assert pathnames != null;
             for (String pathname : pathnames) {
 
                 System.out.println(pathname);
@@ -41,24 +57,64 @@ public class TaskList {
             e.printStackTrace();
         }
     }
-    public static void ReadList(String fileName){ //reads the data specified folder
-        try(FileReader fileReader = new FileReader("." + fileName)) {
-            int ch = fileReader.read();
-            while(ch != -1) {
-                System.out.print((char)ch);
-                fileReader.close();
-            }
-        } catch (FileNotFoundException e) {
-            throw new IllegalArgumentException("ERROR: List not found");// catches if file is not found
-        } catch (IOException e) {
-            throw new IllegalArgumentException("ERROR: Unexpected problem, please ensure you are able to read this file"); //catches in case user does not have authorization to read file or other error occurs
+    public static void ReadList(String FileName) throws IOException { //reads the data specified folder
+        if(!FileName.endsWith(".txt")){
+            FileName = FileName + ".txt";
         }
+        System.out.println("Reading: " + FileName);
+        File file = new File("." + "\\" + FileName);
 
+        BufferedReader read = new BufferedReader(new FileReader(file));
+
+        String content;
+        int i  = 0;
+        try {
+            while ((content = read.readLine()) != null) {
+
+                String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
+                String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
+                String description = content.substring(content.indexOf(":") + 2);
+                //data = new TaskItem(date, taskName, description);
+                System.out.println(i + ") " + content);
+                data = new TaskItem(date, taskName, description);// data is stored to TaskItem
+                SaveTaskDataToTemp(data);
+                i++;
+            }
+        } catch (NullPointerException e){
+            throw new NullPointerException("ERROR: ");
+        }
     }
 
-    public void addTaskData(TaskItem data){//stores information into the array list
-
+    public static void AddTaskData(){
+        while(true){
+            try{
+                String dateInput = getDate();
+                String taskNameInput = getTaskName();
+                String descriptionInput = getDescriptionName();
+                data = new TaskItem(dateInput, taskNameInput, descriptionInput);
+                break;
+            } catch (InvalidDescriptionException e){
+                System.out.print("Warning: description is invalid, please reenter ");
+            }
+        }
+        System.out.println("information inside data from AddTaskData " + data);
+        //return data;
+    }
+    private static String getTaskName(){
+        System.out.print("Please enter task name: ");
+        return input.nextLine();
+    }
+    private static String getDescriptionName(){
+        System.out.print("Please enter task description: ");
+        return input.nextLine();
+    }
+    private static String getDate(){
+        System.out.print("Please enter Date with the YYYY-MM-DD format: ");
+        return input.nextLine();
+    }
+    public static void SaveTaskDataToTemp(TaskItem data){//stores information into the array list
         Tasks.add(data);
     }
+
 }
 

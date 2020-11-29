@@ -199,7 +199,21 @@ public class App {
             System.out.println(content);
     }
     private void addTaskData(String txt) throws IOException {
-        data = getTaskData();
+        while(true){
+
+            try{
+                String taskName = getTaskName();
+                String description = getDescriptionName();
+                String date = getDate();
+                //contentOfFile.add(date + taskName + description);
+                data = new TaskItem(date, taskName, description );
+                break;
+            } catch (InvalidDescriptionException e){
+                System.out.print("Warning: description is invalid, please reenter ");
+            } catch (ParseException e) {
+                System.out.print("Warning: invalid date, please try again");
+            }
+        }
         //writeTaskData();
     }
 

@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -5,20 +7,13 @@ public class App {
     private Scanner input = new Scanner(System.in);
     private int appInput = 0; //maintains the choice of which app the user chooses
     private int menuInput = 0;
-    private TaskList taskList;
-    private String fileName;
+    private String listName;
 
     //private ContactList contactList;
     public static void main(String[] args) {
         App A = new App();
         A.AppSelection();
     }
-
-    public App() {
-        taskList = new TaskList();
-        //contactList = new contactList();
-    }
-
     private void AppSelection() {//asks user to select an application
         System.out.println("Select Your Application");
         System.out.println("-----------------------");
@@ -72,9 +67,9 @@ public class App {
                 if (menuInput == 1) {
                     ListCreation();
                 } else if (menuInput == 2) {
-                    System.out.println("Please select a list");
                     TaskList.DisplayLists();
-                    LoadedList();
+                    System.out.print("Please select a list: ");
+                    SelectList();
                 } else if (menuInput == 3) {
                     ListMenu();
                     System.out.println("returning to App selection");
@@ -82,39 +77,45 @@ public class App {
                 } else {
                     System.out.println("invalid input, please try again");
                 }
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException | FileNotFoundException e) {
 
                 System.out.println("invalid input, please try again");
                 input.next();
                 //throw new IllegalArgumentException("I");
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         } while (menuInput < 3 || menuInput > 0);
 
     }
 
 
-    private void ListCreation() {//asks user for the name of the new list and uses the appInput variable value to specify which app the user is using
-        String ListName;
-        System.out.println("Enter name of of the new list");
-        ListName = input.nextLine();
-        System.out.println("new list name is: ");
-        System.out.print(ListName);
-        fileName = ListName + ".txt";// saves the file name in txt format
-        if (appInput == 1) { //if the user selected the task list the appInput maintains the selection
-            TaskList.writeList(ListName);
-        } else if (appInput == 2) { //if the user selected the contact list the appInput maintains the selection
-            System.out.println("Contact list and item not coded yet, please come back later");
-            ListMenu();
-            //ContactList.writeList(ListName);
+    private void ListCreation() throws FileNotFoundException {//asks user for the name of the new list and uses the appInput variable value to specify which app the user is using
+        System.out.print("Enter name of of the new list: ");
+        listName = input.next();
+        System.out.println();
+        System.out.print("new list name is: ");
+        System.out.print(listName);
+        if(listName.length() > 0){// checks to see if the user entered an empty file name
+            if (appInput == 1) { //if the user selected the task list the appInput maintains the selection
+                TaskList.lisCreation(listName);
+                ListOperationMenu();
+                ListOperationInput();
+            } else if (appInput == 2) { //if the user selected the contact list the appInput maintains the selection
+                System.out.println("Contact list and item not coded yet, please come back later");
+                ListMenu();
+                //ContactList.ListCreation(ListName);
+            }
+        } else {
+            throw new IllegalArgumentException("ERROR: invalid list name, please enter new list name");
         }
-    }
 
-    private void LoadedList() {
-        TaskList.ReadList(input.nextLine());
+    }
+    private void SelectList() throws IOException {
+        listName = input.next();
         ListOperationMenu();
         ListOperationInput();
     }
-
     private void ListOperationMenu() {
 
         System.out.println("List Operation Menu");
@@ -133,41 +134,38 @@ public class App {
         do {
             try {
                 int OperationInput = input.nextInt();
-                if (menuInput == 1) { //view list
-                    TaskList.ReadList(fileName);
-                } else if (menuInput == 2) { //add an item
-                    //TaskList.AddTaskData();
-                    System.out.println("ERROR: Operation unavailable");
-                    LoadedList();
-                } else if (menuInput == 3) { //edit an item
+                if (OperationInput == 1) { //view list
+                    //TaskList.LoadList(listName);
+                    TaskList.ReadList(listName);
+                } else if (OperationInput == 2) { //add an item
+                    TaskList.AddTaskData();
+                    System.out.println("items added");
+                } else if (OperationInput == 3) { //edit an item
                     //TaskList.EditTaskData();
                     System.out.println("ERROR: Operation unavailable");
-                    LoadedList();
-                }else if (menuInput == 4) { //remove an item
+                }else if (OperationInput == 4) { //remove an item
                     //TaskList.RemoveTaskData();
                     System.out.println("ERROR: Operation unavailable");
-                    LoadedList();
-                }else if (menuInput == 5) { //mark an item as completed
+                }else if (OperationInput == 5) { //mark an item as completed
                     //TaskList.MarkTaskAsComplete();
                     System.out.println("ERROR: Operation unavailable");
-                    LoadedList();
-                }else if (menuInput == 6) { //unmark an item as completed
+                }else if (OperationInput == 6) { //unmark an item as completed
                     //TaskList.RemoveTaskAsComplete();
                     System.out.println("ERROR: Operation unavailable");
-                    LoadedList();
-                }else if (menuInput == 7) { //save the current list
-                    //TaskList.SaveList();
+                }else if (OperationInput == 7) { //save the current list
+                    TaskList.WriteToList(listName);
                     System.out.println("ERROR: Operation unavailable");
-                    LoadedList();
-                }else if (menuInput == 8) { //quit to the main menu"
+                }else if (OperationInput == 8) { //quit to the main menu"
                     AppSelection();
                 } else {
-                    System.out.println("invalid input, please try again");
+                    System.out.println("invalid input operation, please try again");
                 }
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException | FileNotFoundException e) {
 
-                System.out.println("invalid input, please try again");
+                System.out.println("invalid input Operations, please try again");
                 input.next();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         } while (menuInput < 8 || menuInput > 0);
     }
