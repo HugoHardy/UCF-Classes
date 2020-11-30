@@ -9,7 +9,7 @@ public class TaskList {
     private static List<TaskItem> Tasks;
 
     public TaskList() {
-        Tasks = new ArrayList<TaskItem>();
+        Tasks = new ArrayList<>();
     }
     public static void listCreation(String listName) throws FileNotFoundException {// creates a new list text file with a user specified name
 
@@ -26,7 +26,7 @@ public class TaskList {
     public static void WriteToList(String FileName) { //writes the list to the specified .txt file
         try(Formatter output = new Formatter(FileName)) {
             for (TaskItem Item : Tasks) {
-                output.format("[%s%] %s: s%n", Item.getTaskDate(), Item.getTaskName(), Item.getTaskDescription());
+                output.format("[%s] %s: %s\n", Item.getTaskDate(), Item.getTaskName(), Item.getTaskDescription());
             }
         } catch(NullPointerException e){
             throw new NullPointerException("ERROR: Data not saved");
@@ -62,7 +62,37 @@ public class TaskList {
         }
         System.out.println("Reading: " + FileName);
         File file = new File("." + "\\" + FileName);
-        System.out.println("FileName: " + FileName);
+        //BufferedReader read = new BufferedReader(new FileReader(file));
+
+        //String content;
+        int i  = 0;
+        //content = read.readLine();
+        if(Tasks.get(i) == null){
+            System.out.println("List is empty");
+        } else {
+            //TaskItem data = null;
+            //content = read.readLine();
+            for (TaskItem Item : Tasks) {
+                //try {
+                    System.out.println(i + ")" + "[" +  Item.getTaskDate() + "] " + Item.getTaskName() + ": " + Item.getTaskDescription());
+                    /*String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
+                    String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
+                    String description = content.substring(content.indexOf(":") + 2);
+                    data = new TaskItem(date, taskName, description);
+                    AddTaskData(data);*/
+                    i++;
+                    //content = read.readLine();
+                //} catch (IndexOutOfBoundsException e) {
+                //    throw new NullPointerException("ERROR: Index is out of bounds!");
+                //}
+            }
+        }
+    }
+    public static void DataSetter(String FileName) throws IOException {
+        if(!FileName.endsWith(".txt")){
+            FileName = FileName + ".txt";
+        }
+        File file = new File("." + "\\" + FileName);
         BufferedReader read = new BufferedReader(new FileReader(file));
 
         String content;
@@ -75,22 +105,12 @@ public class TaskList {
             //content = read.readLine();
             while (content != null) {
                 try {
-
-                    //data = new TaskItem(date, taskName, description);
-                    System.out.println(i + ") " + content);
                     String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
                     String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
                     String description = content.substring(content.indexOf(":") + 2);
                     data = new TaskItem(date, taskName, description);
-                    //System.out.println("Data passed");
-
                     AddTaskData(data);
-                    //System.out.println("Add data passed");
-                    //data = new TaskItem(date, taskName, description);// data is stored to TaskItem
-                    //SaveTaskDataToTemp(data);
                     i++;
-                    //System.out.println("index passed");
-
                     content = read.readLine();
                 } catch (NullPointerException e) {
                     throw new NullPointerException("ERROR: data null!");

@@ -35,12 +35,11 @@ public class TaskApp {
                 } else if (menuInput == 2) {
                     TaskList.DisplayLists();
                     SelectList();
-                    System.out.print("Please select a list: ");
-                    SelectList();
-                } else if (menuInput == 3) {
                     TaskMenu();
-                    System.out.println("returning to App selection");
-                    new App();
+                } else if (menuInput == 3) {
+
+                    System.out.println("Exiting Task Application");
+                    System.exit(-1);
                 } else {
                     System.out.println("invalid input, please try again");
                 }
@@ -70,7 +69,6 @@ public class TaskApp {
             ListOperationInput();
             System.out.println("Contact list and item not coded yet, please come back later");
             TaskMenu();
-            //ContactList.ListCreation(ListName);
 
         } else {
             throw new IllegalArgumentException("ERROR: invalid list name, please enter new list name");
@@ -79,6 +77,10 @@ public class TaskApp {
     }
     private void SelectList() throws IOException {
         listName = input.next();
+        if(!listName.endsWith(".txt")){
+            listName = listName + ".txt";
+        }
+        TaskList.DataSetter(listName);
         ListOperationMenu();
         ListOperationInput();
     }
@@ -100,29 +102,30 @@ public class TaskApp {
         do {
             try {
                 int OperationInput = input.nextInt();
-                if (OperationInput == 1) { //view list
+                if (OperationInput == 1) { //view list: works
                     TaskList.ReadList(listName);
-                } else if (OperationInput == 2) { //add an item
+                    ListOperationMenu();
+                } else if (OperationInput == 2) { //add an item: works
                     data = TaskList.GetData();
                     TaskList.AddTaskData(data);
-                    System.out.println("items added");
+                    ListOperationMenu();
+                    System.out.println("Task added");
                 } else if (OperationInput == 3) { //edit an item
                     TaskList.EditPrompt();
                     TaskList.EditTaskData();
                     System.out.println("ERROR: Operation unavailable");
-                }else if (OperationInput == 4) { //remove an item
+                }else if (OperationInput == 4) { //remove an item: works
                     TaskList.RemovePrompt();
                     TaskList.RemoveTaskData();
-                    System.out.println("ERROR: Operation unavailable");
+                    System.out.println("Task removed");
                 }else if (OperationInput == 5) { //mark an item as completed
                     //TaskList.MarkTaskAsComplete();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 6) { //unmark an item as completed
                     //TaskList.RemoveTaskAsComplete();
                     System.out.println("ERROR: Operation unavailable");
-                }else if (OperationInput == 7) { //save the current list
+                }else if (OperationInput == 7) { //save the current list: works
                     TaskList.WriteToList(listName);
-                    System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 8) { //quit to the main menu"
                     TaskMenu();
                 } else {
