@@ -9,7 +9,7 @@ public class TaskList {
     private static List<TaskItem> Tasks;
 
     public TaskList() {
-        Tasks = new ArrayList<>();
+        Tasks = new ArrayList<TaskItem>();
     }
     public static void listCreation(String listName) throws FileNotFoundException {// creates a new list text file with a user specified name
 
@@ -62,30 +62,36 @@ public class TaskList {
         }
         System.out.println("Reading: " + FileName);
         File file = new File("." + "\\" + FileName);
-
+        System.out.println("FileName: " + FileName);
         BufferedReader read = new BufferedReader(new FileReader(file));
 
         String content;
         int i  = 0;
-        if(read.readLine() == null){
+        content = read.readLine();
+        if(content == null){
             System.out.println("List is empty");
         } else {
             TaskItem data = null;
-            while ((content = read.readLine()) != null) {
+            //content = read.readLine();
+            while (content != null) {
                 try {
+
+                    //data = new TaskItem(date, taskName, description);
+                    System.out.println(i + ") " + content);
                     String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
                     String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
                     String description = content.substring(content.indexOf(":") + 2);
-                    //data = new TaskItem(date, taskName, description);
-                    System.out.println(i + ") " + content);
-                    data = new TaskItem(date, taskName, description);// returns NullPointerException
-                    System.out.println("Data passed");
+                    data = new TaskItem(date, taskName, description);
+                    //System.out.println("Data passed");
+
                     AddTaskData(data);
-                    System.out.println("Add data passed");
+                    //System.out.println("Add data passed");
                     //data = new TaskItem(date, taskName, description);// data is stored to TaskItem
                     //SaveTaskDataToTemp(data);
                     i++;
-                    System.out.println("index passed");
+                    //System.out.println("index passed");
+
+                    content = read.readLine();
                 } catch (NullPointerException e) {
                     throw new NullPointerException("ERROR: data null!");
                 }

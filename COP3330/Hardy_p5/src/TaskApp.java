@@ -8,10 +8,11 @@ public class TaskApp {
     private int menuInput = 0;
     private String listName;
     private TaskItem data;
+    private TaskList Tasks;
 
-    public static void main(String[] args) {
-        TaskApp TA= new TaskApp();
-        TA.TaskMenu();
+    public TaskApp(){
+        Tasks = new TaskList();
+        TaskMenu();
     }
     private void TaskMenu() {//menu which lists out the choice after user selected an application
         System.out.print("Main menu");
@@ -32,7 +33,8 @@ public class TaskApp {
                 if (menuInput == 1) {
                     ListCreation();
                 } else if (menuInput == 2) {
-                    TaskList.listCreation(listName);
+                    TaskList.DisplayLists();
+                    SelectList();
                     System.out.print("Please select a list: ");
                     SelectList();
                 } else if (menuInput == 3) {
