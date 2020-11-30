@@ -111,9 +111,10 @@ public class TaskApp {
                     ListOperationMenu();
                     System.out.println("Task added");
                 } else if (OperationInput == 3) { //edit an item
+                    TaskList.ReadList(listName);
                     TaskList.EditPrompt();
                     TaskList.EditTaskData();
-                    System.out.println("ERROR: Operation unavailable");
+                    //System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 4) { //remove an item: works
                     TaskList.RemovePrompt();
                     TaskList.RemoveTaskData();

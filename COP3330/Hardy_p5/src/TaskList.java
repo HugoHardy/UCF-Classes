@@ -158,10 +158,10 @@ public class TaskList {
         Tasks.add(data);
     }*/
     public static void EditPrompt(){
-        System.out.println("Please choose a task to edit: ");
+        System.out.print("Please choose a task to edit: ");
     }
     public static void EditTaskData(){
-        Tasks.add(input.nextInt(), new TaskItem(getDate(), getTaskName(), getDescriptionName()));
+        Tasks.set(input.nextInt(), new TaskItem(getDate(), getTaskName(), getDescriptionName()));// needs work
     }
     public static void RemovePrompt(){
         System.out.println("Please choose task to remove: ");
