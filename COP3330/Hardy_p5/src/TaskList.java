@@ -11,9 +11,9 @@ public class TaskList {
     public TaskList() {
         Tasks = new ArrayList<>();
     }
-    public static void lisCreation(String listName) throws FileNotFoundException {// creates a new list text file with a user specified name
+    public static void listCreation(String listName) throws FileNotFoundException {// creates a new list text file with a user specified name
 
-            if (listName.endsWith(".txt")) { //checks to see if user inputs file extension
+            if (listName.endsWith(".txt")) { //checks to see if user inputs file extension then creates a .txt file with the specified name
                 new Formatter(listName);
             } else {
                 new Formatter(listName + ".txt");
@@ -23,7 +23,7 @@ public class TaskList {
 
     }
 
-    public static void WriteToList(String FileName) { //creates a fresh list
+    public static void WriteToList(String FileName) { //writes the list to the specified .txt file
         try(Formatter output = new Formatter(FileName)) {
             for (TaskItem Item : Tasks) {
                 output.format("[%s%] %s: s%n", Item.getTaskDate(), Item.getTaskName(), Item.getTaskDescription());
@@ -70,8 +70,8 @@ public class TaskList {
         if(read.readLine() == null){
             System.out.println("List is empty");
         } else {
+            TaskItem data = null;
             while ((content = read.readLine()) != null) {
-                TaskItem data;
                 try {
                     String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
                     String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));

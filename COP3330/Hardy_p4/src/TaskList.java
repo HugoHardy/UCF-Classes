@@ -26,6 +26,9 @@ public class TaskList {
         }
     }
 
+    public static void listCreation(String listName) {
+    }
+
     public void addTaskData(TaskItem data){
         Tasks.add(data);
     }

@@ -22,11 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Reverted back to original ReadList function&#10;Removed: SaveTaskDataToTemp for being redundant&#10;Needs work: fix line 81 and 99 as it is returning a NullPointerException error">
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Work on: TaskList line 83, catching NullPointerException">
+      <change afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p4/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p4/src/TaskList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hardy_p5/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/list2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606624114771</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Work on: TaskList line 83, catching NullPointerException">
+      <created>1606689548483</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606689548483</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +377,8 @@
     <MESSAGE value="Added List Operation menu and input&#10;Added to TaskList class reading directory filtering only .txt files and reading of the selected file." />
     <MESSAGE value="Reverted back to original ReadList function&#10;Removed: ListLoad as it was redundant&#10;Needs work: fix SaveTaskDataToTemp method returning a NullPointerExeption" />
     <MESSAGE value="Reverted back to original ReadList function&#10;Removed: SaveTaskDataToTemp for being redundant&#10;Needs work: fix line 81 and 99 as it is returning a NullPointerException error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverted back to original ReadList function&#10;Removed: SaveTaskDataToTemp for being redundant&#10;Needs work: fix line 81 and 99 as it is returning a NullPointerException error" />
+    <MESSAGE value="Work on: TaskList line 83, catching NullPointerException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on: TaskList line 83, catching NullPointerException" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="218" key="#Inspections" timestamp="1606616693755">
@@ -411,10 +425,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="371" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605545696721" />
-    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606327100625">
+    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606695306858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606327100625" />
+    <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606695306858" />
     <state x="276" y="288" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1606610070772">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -427,22 +441,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1168" height="290" key="GridCell.Tab.0.bottom" timestamp="1606689366268">
+    <state width="1168" height="290" key="GridCell.Tab.0.bottom" timestamp="1606694279311">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606689366268" />
-    <state width="1168" height="290" key="GridCell.Tab.0.center" timestamp="1606689366268">
+    <state width="1168" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606694279311" />
+    <state width="1168" height="290" key="GridCell.Tab.0.center" timestamp="1606694279311">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606689366268" />
-    <state width="1168" height="290" key="GridCell.Tab.0.left" timestamp="1606689366268">
+    <state width="1168" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606694279311" />
+    <state width="1168" height="290" key="GridCell.Tab.0.left" timestamp="1606694279311">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606689366268" />
-    <state width="1168" height="290" key="GridCell.Tab.0.right" timestamp="1606689366268">
+    <state width="1168" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606694279311" />
+    <state width="1168" height="290" key="GridCell.Tab.0.right" timestamp="1606694279311">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606689366268" />
+    <state width="1168" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606694279311" />
     <state width="1168" height="368" key="GridCell.Tab.1.bottom" timestamp="1606624205803">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -463,10 +477,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606600614724" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606624116857">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606689549510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606624116857" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606689549510" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
