@@ -114,19 +114,24 @@ public class TaskApp {
                     TaskList.ReadList(listName);
                     TaskList.EditPrompt();
                     TaskList.EditTaskData();
+                    ListOperationMenu();
                     //System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 4) { //remove an item: works
                     TaskList.RemovePrompt();
                     TaskList.RemoveTaskData();
+                    ListOperationMenu();
                     System.out.println("Task removed");
                 }else if (OperationInput == 5) { //mark an item as completed
                     //TaskList.MarkTaskAsComplete();
+                    // ListOperationMenu();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 6) { //unmark an item as completed
                     //TaskList.RemoveTaskAsComplete();
+                    // ListOperationMenu();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 7) { //save the current list: works
                     TaskList.WriteToList(listName);
+                    // ListOperationMenu();
                 }else if (OperationInput == 8) { //quit to the main menu"
                     TaskMenu();
                 } else {

@@ -1,8 +1,5 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class TaskList {
     private static final Scanner input = new Scanner(System.in);
@@ -62,29 +59,13 @@ public class TaskList {
         }
         System.out.println("Reading: " + FileName);
         File file = new File("." + "\\" + FileName);
-        //BufferedReader read = new BufferedReader(new FileReader(file));
-
-        //String content;
         int i  = 0;
-        //content = read.readLine();
         if(Tasks.get(i) == null){
             System.out.println("List is empty");
         } else {
-            //TaskItem data = null;
-            //content = read.readLine();
             for (TaskItem Item : Tasks) {
-                //try {
                     System.out.println(i + ")" + "[" +  Item.getTaskDate() + "] " + Item.getTaskName() + ": " + Item.getTaskDescription());
-                    /*String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
-                    String taskName = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
-                    String description = content.substring(content.indexOf(":") + 2);
-                    data = new TaskItem(date, taskName, description);
-                    AddTaskData(data);*/
                     i++;
-                    //content = read.readLine();
-                //} catch (IndexOutOfBoundsException e) {
-                //    throw new NullPointerException("ERROR: Index is out of bounds!");
-                //}
             }
         }
     }
@@ -96,13 +77,11 @@ public class TaskList {
         BufferedReader read = new BufferedReader(new FileReader(file));
 
         String content;
-        int i  = 0;
         content = read.readLine();
         if(content == null){
             System.out.println("List is empty");
         } else {
             TaskItem data = null;
-            //content = read.readLine();
             while (content != null) {
                 try {
                     String date = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
@@ -110,7 +89,6 @@ public class TaskList {
                     String description = content.substring(content.indexOf(":") + 2);
                     data = new TaskItem(date, taskName, description);
                     AddTaskData(data);
-                    i++;
                     content = read.readLine();
                 } catch (NullPointerException e) {
                     throw new NullPointerException("ERROR: data null!");
@@ -118,7 +96,7 @@ public class TaskList {
             }
         }
     }
-    public static TaskItem GetData(){
+    public static TaskItem GetData(){// asks user for data
         TaskItem data = null;
         try{
                 String dateInput = getDate();
@@ -132,36 +110,58 @@ public class TaskList {
     }
     public static void AddTaskData(TaskItem data){
             try{
-                /*String dateInput = getDate();
-                String taskNameInput = getTaskName();
-                String descriptionInput = getDescriptionName();
-                Tasks.add(new TaskItem(dateInput, taskNameInput, descriptionInput));*/
                 Tasks.add(data);
-                //System.out.println("information inside data from AddTaskData " + Tasks);
             } catch (InvalidDescriptionException e){
                 System.out.print("Warning: description is invalid, please reenter ");
             }
     }
+    private static String getDate(){
+        System.out.println();
+        System.out.print("Please enter Date with the YYYY-MM-DD format: ");
+        String date = input.nextLine();
+        return date;
+    }
     private static String getTaskName(){
+        System.out.println();
         System.out.print("Please enter task name: ");
-        return input.nextLine();
+        String Name = input.nextLine();
+        return Name;
     }
     private static String getDescriptionName(){
-        System.out.print("Please enter task description: ");
-        return input.nextLine();
+        System.out.println();
+        System.out.println("Please enter task description: ");
+        String desciption = input.nextLine();
+        return desciption;
     }
-    private static String getDate(){
-        System.out.print("Please enter Date with the YYYY-MM-DD format: ");
-        return input.nextLine();
-    }
-    /*public static void SaveTaskDataToTemp(TaskItem data){//stores information into the array list
-        Tasks.add(data);
-    }*/
     public static void EditPrompt(){
         System.out.print("Please choose a task to edit: ");
     }
     public static void EditTaskData(){
-        Tasks.set(input.nextInt(), new TaskItem(getDate(), getTaskName(), getDescriptionName()));// needs work
+        TaskItem data = null;
+        int setInput = input.nextInt();
+        try{
+            data.getTaskDate();
+            if(IsWithinBound(setInput)) {
+                String date = getDate();
+                String task = getTaskName();
+                String description = getDescriptionName();
+                data = new TaskItem(date, task, description);
+                SetEdit(setInput, data);// needs work
+            }
+        } catch (InputMismatchException e) {
+            EditTaskData();
+            throw new IllegalArgumentException("Not valid argument");
+        }
+    }
+    public static void SetEdit(int i, TaskItem data){
+        Tasks.set(i, data);
+    }
+    private static boolean IsWithinBound(int bounds){
+        if(bounds <= Tasks.size()){
+            return true;
+        } else {
+            return false;
+        }
     }
     public static void RemovePrompt(){
         System.out.println("Please choose task to remove: ");

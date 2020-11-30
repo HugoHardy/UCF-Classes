@@ -10,20 +10,20 @@ public class TaskItem {
             System.out.println("date is valid");
             this.date = date;
         } else {
-            new IllegalArgumentException("Date invalid, please enter a new date (YYYY-MM-DD): ");
+            throw new IllegalArgumentException("Date invalid, please enter a new date (YYYY-MM-DD): ");
         }
         if (isTaskNameValid(title)) {
             System.out.println("Name is valid");
             this.taskName = title;
         } else {
-            new IllegalArgumentException("task name is invalid, please enter a new task name");
+            throw new IllegalArgumentException("task name is invalid, please enter a new task name");
 
         }
         if (isTaskDescriptionValid(description)) {
             System.out.println("description is valid");
             this.taskDescription = description;
         } else {
-            new IllegalArgumentException("Description invalid, please enter a new description");
+            throw new IllegalArgumentException("Description invalid, please enter a new description");
         }
     }
     public String getTaskDate() {
