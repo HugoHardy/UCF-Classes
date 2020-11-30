@@ -96,7 +96,7 @@ public class TaskList {
             }
         }
     }
-    public static TaskItem GetData(){// asks user for data
+    public static TaskItem GetData(){
         TaskItem data = null;
         try{
                 String dateInput = getDate();
@@ -119,13 +119,14 @@ public class TaskList {
         System.out.println();
         System.out.print("Please enter Date with the YYYY-MM-DD format: ");
         String date = input.nextLine();
+
         return date;
     }
     private static String getTaskName(){
         System.out.println();
         System.out.print("Please enter task name: ");
-        String Name = input.nextLine();
-        return Name;
+        String name = input.nextLine();
+        return name;
     }
     private static String getDescriptionName(){
         System.out.println();
@@ -139,8 +140,8 @@ public class TaskList {
     public static void EditTaskData(){
         TaskItem data = null;
         int setInput = input.nextInt();
+        input.nextLine();
         try{
-            data.getTaskDate();
             if(IsWithinBound(setInput)) {
                 String date = getDate();
                 String task = getTaskName();
@@ -151,6 +152,7 @@ public class TaskList {
         } catch (InputMismatchException e) {
             EditTaskData();
             throw new IllegalArgumentException("Not valid argument");
+
         }
     }
     public static void SetEdit(int i, TaskItem data){
