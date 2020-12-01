@@ -7,30 +7,35 @@ public class ContactItem {
     private String eMail;
 
     public ContactItem(String FirstName, String LastName, String phoneNumber, String eMail) {
-        if (IsAllEmpty()) {
-            if (isFirstNameValid(Firstname)) {
-                System.out.println("Firstname is valid");
-                this.Firstname = FirstName;
-            } else {
-                Firstname = " ";
-            }
-            if(isLastNameValid(LastName)){
-                this.LastName = LastName;
-            }
-            if (isPhoneNumberValid(phoneNumber)) {
-                System.out.println("Firstname is valid");
-                this.phoneNumber = phoneNumber;
-            } else {
-                phoneNumber = " ";//redundancies
+        try {
+            if (!IsAllEmpty()) {
+                if (isFirstNameValid(Firstname)) {
+                    Firstname = " ";
+                } else {
+                    System.out.println("Firstname is valid");
+                    this.Firstname = FirstName;
+                }
+                if (isLastNameValid(LastName)) {
+                } else {
+                    this.LastName = LastName;
+                }
+                if (isPhoneNumberValid(phoneNumber)) {
+                    phoneNumber = " ";
 
-            }
-            if (isEMailValid(eMail)) {
-                this.eMail = eMail;
+                } else {
+                    System.out.println("Firstname is valid");
+                    this.phoneNumber = phoneNumber;
+                }
+                if (isEMailValid(eMail)) {
+                    eMail = " ";
+                } else {
+                    this.eMail = eMail;
+                }
             } else {
-                eMail = " ";
+                throw new IllegalArgumentException("ERROR: All information is empty!");
             }
-        } else{
-            throw new IllegalArgumentException("ERROR: All information is empty!");
+        } catch (NullPointerException e){
+            throw new NullPointerException("All data is blank!");
         }
     }
 
@@ -44,20 +49,20 @@ public class ContactItem {
     }
 
     public boolean isFirstNameValid(String Firstname) {
-        return !Firstname.isEmpty();// needs to work on date verification
+        return Firstname.isEmpty() || Firstname.equals(" ") || Firstname.equals(null);// needs to work on date verification
     }
     public String getLastName(){
         return this.LastName;
     }
     public boolean isLastNameValid(String LastName){
-        return !LastName.isEmpty();
+        return LastName.isEmpty() || LastName.equals(" ") || LastName.equals(null);
     }
 
     public String getphoneNumber() {
         return this.Firstname;
     }
     private boolean isPhoneNumberValid(String phoneNumber) {
-        return !phoneNumber.isEmpty();
+        return phoneNumber.isEmpty() || phoneNumber.equals(" ") || phoneNumber.equals(null);
     }
 
     public String getPhoneNumber() {
@@ -65,6 +70,6 @@ public class ContactItem {
     }
 
     public boolean isEMailValid(String eMail) {
-        return !eMail.isEmpty();
+        return eMail.isEmpty() || eMail.equals(" ") || eMail.equals(null);
     }
 }

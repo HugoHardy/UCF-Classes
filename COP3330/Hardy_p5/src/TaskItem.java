@@ -12,15 +12,15 @@ public class TaskItem {
                 this.date = date;
             }
             if (isTaskNameValid(title)) {
-                this.taskName = title;
-            } else {
-                throw new IllegalArgumentException("task name is invalid, please enter a new task name");
+                throw new IllegalArgumentException("task name is invalid, please enter a new task name: ");
 
+            } else {
+                this.taskName = title;
             }
             if (isTaskDescriptionValid(description)) {
-                this.taskDescription = description;
+                throw new IllegalArgumentException("Description invalid, please enter a new description: ");
             } else {
-                throw new IllegalArgumentException("Description invalid, please enter a new description");
+                this.taskDescription = description;
             }
         } catch (NullPointerException e) {
             e.getCause();
@@ -33,7 +33,7 @@ public class TaskItem {
     }
 
     public static boolean isDateValid(String date) {
-        return !date.isEmpty() && !date.equals(" ");// needs to work on date verification
+        return date.isEmpty() || date.equals(" ") || date.equals(null);
     }
 
     public String getTaskName() {
@@ -41,7 +41,7 @@ public class TaskItem {
     }
 
     public static boolean isTaskNameValid(String name) {
-        return !name.isEmpty() && !name.equals(" ");
+        return name.isEmpty() || name.equals(" ") || name.equals(null);
     }
 
     public String getTaskDescription() {
@@ -49,7 +49,7 @@ public class TaskItem {
     }
 
     public boolean isTaskDescriptionValid(String description) {
-        return !description.isEmpty() && !description.equals(" ");
+        return description.isEmpty() || description.equals(" ") || description.equals(null);
     }
 
 

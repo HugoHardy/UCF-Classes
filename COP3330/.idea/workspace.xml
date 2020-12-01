@@ -22,7 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Added: more tests to TaskItemTest" />
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Added: more tests to TaskItemTest">
+      <change afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/ContactApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/ContactApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/ContactItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/ContactItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/ContactList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/ContactList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/ContactListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/ContactListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItemTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,17 +94,31 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaskItemTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="Hardy_p2" />
+  <component name="RunManager" selected="JUnit.ContactListTest.removingItemsDecreasesSize">
+    <configuration name="ContactItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hardy_p5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContactItemTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Hardy5 App" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
+    <configuration name="ContactListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hardy_p5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContactListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactListTest.removingItemsDecreasesSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hardy_p5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContactListTest" />
+      <option name="METHOD_NAME" value="removingItemsDecreasesSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,39 +132,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskItemTest.creatingTaskItemSucceedsWithValidDueDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hardy_p5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaskListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskListTest.newListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hardy_p5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaskListTest" />
-      <option name="METHOD_NAME" value="newListIsEmpty" />
+      <option name="MAIN_CLASS_NAME" value="TaskItemTest" />
+      <option name="METHOD_NAME" value="creatingTaskItemSucceedsWithValidDueDate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.App" />
-      <item itemvalue="Application.Hardy5 App" />
-      <item itemvalue="JUnit.TaskListTest" />
-      <item itemvalue="JUnit.TaskListTest.newListIsEmpty" />
       <item itemvalue="JUnit.TaskItemTest" />
+      <item itemvalue="JUnit.ContactItemTest" />
+      <item itemvalue="JUnit.TaskItemTest.creatingTaskItemSucceedsWithValidDueDate" />
+      <item itemvalue="JUnit.ContactListTest" />
+      <item itemvalue="JUnit.ContactListTest.removingItemsDecreasesSize" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContactListTest.removingItemsDecreasesSize" />
+        <item itemvalue="JUnit.ContactListTest" />
+        <item itemvalue="JUnit.ContactItemTest" />
         <item itemvalue="JUnit.TaskItemTest" />
-        <item itemvalue="JUnit.TaskListTest" />
-        <item itemvalue="JUnit.TaskListTest.newListIsEmpty" />
-        <item itemvalue="Application.Hardy5 App" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.TaskItemTest.creatingTaskItemSucceedsWithValidDueDate" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606858094427</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added: more tests to TaskItemTest">
+      <created>1606858487450</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1606858487450</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -511,46 +538,46 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1168" height="289" key="GridCell.Tab.0.bottom" timestamp="1606858065739">
+    <state width="1168" height="366" key="GridCell.Tab.0.bottom" timestamp="1606862987841">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606858065739" />
-    <state width="1168" height="289" key="GridCell.Tab.0.center" timestamp="1606858065739">
+    <state width="1168" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606862987841" />
+    <state width="1168" height="366" key="GridCell.Tab.0.center" timestamp="1606862987841">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="289" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606858065739" />
-    <state width="1168" height="289" key="GridCell.Tab.0.left" timestamp="1606858065739">
+    <state width="1168" height="366" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606862987841" />
+    <state width="1168" height="366" key="GridCell.Tab.0.left" timestamp="1606862987841">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="289" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606858065739" />
-    <state width="1168" height="289" key="GridCell.Tab.0.right" timestamp="1606858065739">
+    <state width="1168" height="366" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606862987841" />
+    <state width="1168" height="366" key="GridCell.Tab.0.right" timestamp="1606862987841">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="289" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606858065739" />
-    <state width="1168" height="366" key="GridCell.Tab.1.bottom" timestamp="1606849798332">
+    <state width="1168" height="366" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606862987841" />
+    <state width="1168" height="366" key="GridCell.Tab.1.bottom" timestamp="1606862988196">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="366" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
-    <state width="1168" height="366" key="GridCell.Tab.1.center" timestamp="1606849798332">
+    <state width="1168" height="366" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606862988196" />
+    <state width="1168" height="366" key="GridCell.Tab.1.center" timestamp="1606862988196">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="366" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
-    <state width="1168" height="366" key="GridCell.Tab.1.left" timestamp="1606849798332">
+    <state width="1168" height="366" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606862988196" />
+    <state width="1168" height="366" key="GridCell.Tab.1.left" timestamp="1606862988196">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="366" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
-    <state width="1168" height="366" key="GridCell.Tab.1.right" timestamp="1606849798332">
+    <state width="1168" height="366" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606862988196" />
+    <state width="1168" height="366" key="GridCell.Tab.1.right" timestamp="1606862988196">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="366" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
+    <state width="1168" height="366" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606862988196" />
     <state x="662" y="242" key="RollbackChangesDialog" timestamp="1606600614724">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606600614724" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606858096430">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606858490182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606858096430" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606858490182" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -583,10 +610,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="0" y="0" width="1001" height="1087" key="dock-window-3/0.0.1920.1080@0.0.1920.1080" timestamp="1606841274643" />
-    <state x="-21" y="0" width="1001" height="1087" key="dock-window-4" timestamp="1606856937695">
+    <state x="-18" y="0" width="1080" height="1087" key="dock-window-4" timestamp="1606860292178">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-21" y="0" width="1001" height="1087" key="dock-window-4/0.0.1920.1080@0.0.1920.1080" timestamp="1606856937695" />
+    <state x="-18" y="0" width="1080" height="1087" key="dock-window-4/0.0.1920.1080@0.0.1920.1080" timestamp="1606860292178" />
     <state x="597" y="160" key="new project wizard" timestamp="1606315176593">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -615,6 +642,43 @@
           <url>file://$PROJECT_DIR$/Hardy_p5/src/TaskList.java</url>
           <line>97</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Hardy_p5/src/ContactItem.java</url>
+          <line>50</line>
+          <properties class="ContactItem" method="isFirstNameValid">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Hardy_p5/src/ContactItem.java</url>
+          <line>56</line>
+          <properties class="ContactItem" method="isLastNameValid">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Hardy_p5/src/ContactItem.java</url>
+          <line>63</line>
+          <properties class="ContactItem" method="isPhoneNumberValid">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Hardy_p5/src/ContactItem.java</url>
+          <line>71</line>
+          <properties class="ContactItem" method="isEMailValid">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

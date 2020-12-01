@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -20,13 +21,14 @@ public class ContactListTest {
     @Test
     public void addingItemsIncreasesSize(){
         CLTest = new ContactList();
-        ContactItem data = null;
+        ContactItem data;
         data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
         CLTest.AddContactData(data);
         data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
         CLTest.AddContactData(data);
         assertEquals(2, CLTest.GetListSize());
-    }//@Test
+    }
+    //@Test
     //completingTaskItemChangesStatus()
     //@Test
     //completingTaskItemFailsWithInvalidIndex()
@@ -77,10 +79,29 @@ public class ContactListTest {
         CLTest.DisplayLists();
         assertEquals( "List is empty", CLTest.EmptyList());
     }
-    //@Test
-    //public void removingItemsDecreasesSize()
-    //@Test
-    //public void removingItemsFailsWithInvalidIndex()
+    @Test
+    public void removingItemsDecreasesSize(){
+        CLTest = new ContactList();
+        ContactItem data;
+        data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+        CLTest.AddContactData(data);
+        data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+        CLTest.AddContactData(data);
+        CLTest.RemoveTaskData(1);
+        assertEquals(1, CLTest.GetListSize());
+    }
+    @Test
+    public void removingItemsFailsWithInvalidIndex(){
+        CLTest = new ContactList();
+        ContactItem data;
+        data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+        CLTest.AddContactData(data);
+        data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+        CLTest.AddContactData(data);
+        Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
+            CLTest.RemoveTaskData(1);
+        });
+    }
     //@Test
     //public void savedTaskListCanBeLoaded()
     //@Test

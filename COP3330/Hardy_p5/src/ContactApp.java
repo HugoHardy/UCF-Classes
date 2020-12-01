@@ -113,7 +113,7 @@ public class ContactApp {
                     //System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 4) { //remove an item: works
                     ContactList.RemovePrompt();
-                    ContactList.RemoveTaskData();
+                    ContactList.RemoveTaskData(input.nextInt());
                     ListOperationMenu();
                     System.out.println("Task removed");
                 }else if (OperationInput == 5) { //mark an item as completed

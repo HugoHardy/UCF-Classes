@@ -124,23 +124,38 @@ public class ContactList {
     private static String getFirstName(){
         System.out.println();
         System.out.print("Please enter Date with the YYYY-MM-DD format: ");
-
-        return input.nextLine();
+        String fName = input.nextLine();
+        if(fName == null || fName== ""){
+            return "";
+        }
+        return fName;
     }
     private static String getLastName(){
         System.out.println();
         System.out.print("Please enter task name: ");
-        return input.nextLine();
+        String lName = input.nextLine();
+        if(lName == null || lName == ""){
+            return "";
+        }
+        return lName;
     }
     private static String getPhoneNumber(){
         System.out.println();
         System.out.println("Please enter task description: ");
-        return input.nextLine();
+        String fName = input.nextLine();
+        if(fName == null || fName== ""){
+            return "";
+        }
+        return fName;
     }
     private static String getEMail(){
         System.out.println();
         System.out.println("Please enter task description: ");
-        return input.nextLine();
+        String eMail = input.nextLine();
+        if(eMail == null || eMail == ""){
+            return "";
+        }
+        return eMail;
     }
     public static void EditPrompt(){
         System.out.print("Please choose a task to edit: ");
@@ -173,7 +188,7 @@ public class ContactList {
     public static void RemovePrompt(){
         System.out.println("Please choose task to remove: ");
     }
-    public static void RemoveTaskData(){
-        Contacts.remove(input.nextInt());
+    public static void RemoveTaskData(int i){
+        Contacts.remove(i);
     }
 }
