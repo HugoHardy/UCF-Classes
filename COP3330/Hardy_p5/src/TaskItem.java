@@ -32,7 +32,7 @@ public class TaskItem {
         return this.date;
     }
 
-    public boolean isDateValid(String date) {
+    public static boolean isDateValid(String date) {
         return !date.isEmpty() && !date.equals(" ");// needs to work on date verification
     }
 
