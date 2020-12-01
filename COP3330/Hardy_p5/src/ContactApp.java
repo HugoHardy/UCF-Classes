@@ -3,16 +3,16 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class TaskApp {
+public class ContactApp {
     private Scanner input = new Scanner(System.in);
     private int menuInput = 0;
     private String listName;
 
-    public TaskApp(){
-        TaskList tasks = new TaskList();
-        TaskMenu();
+    public ContactApp(){
+        ContactList contacts = new ContactList();
+        ContactMenu();
     }
-    private void TaskMenu() {//menu which lists out the choice after user selected an application
+    private void ContactMenu() {//menu which lists out the choice after user selected an application
         System.out.print("Main menu");
         System.out.println();
         System.out.println("--------");
@@ -21,19 +21,19 @@ public class TaskApp {
         System.out.println("2) Load an existing List");
         System.out.println("3) Quit to main menu");
         System.out.print("Please choose one of the options above: ");
-        MenuInput();
+        CMenuInput();
     }
 
-    private void MenuInput() {//menu input to select which app function to choose from
+    private void CMenuInput() {//menu input to select which app function to choose from
         do {
             try {
                 menuInput = input.nextInt();
                 if (menuInput == 1) {
                     ListCreation();
                 } else if (menuInput == 2) {
-                    TaskList.DisplayLists();
+                    ContactList.DisplayLists();
                     SelectList();
-                    TaskMenu();
+                    ContactMenu();
                 } else if (menuInput == 3) {
 
                     System.out.println("Exiting Task Application");
@@ -41,10 +41,10 @@ public class TaskApp {
                 } else {
                     System.out.println("invalid input, please try again");
                 }
-            } catch (InputMismatchException e) {
-                System.out.println("ERROR: not a valid int value, please try again");
+            } catch (InputMismatchException | FileNotFoundException e) {
+
+                System.out.println("invalid input, please try again");
                 input.next();
-                //throw new IllegalArgumentException("I");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -59,12 +59,11 @@ public class TaskApp {
         System.out.println();
         System.out.println("new list name is: ");
         System.out.print(listName);
-        if(listName.length() > 0){// checks to see if the user entered an empty file name
-            //if the user selected the task list the appInput maintains the selection
-            TaskList.ListCreation(listName);
+        if(listName.length() != 0 || !listName.isEmpty()){// checks to see if the user entered an empty file name
+            ContactList.ListCreation(listName);
             ListOperationMenu();
             ListOperationInput();
-            TaskMenu();
+            ContactMenu();
 
         } else {
             throw new IllegalArgumentException("ERROR: invalid list name, please enter new list name");
@@ -76,7 +75,7 @@ public class TaskApp {
         if(!listName.endsWith(".txt")){
             listName = listName + ".txt";
         }
-        TaskList.DataSetter(listName);
+        ContactList.DataSetter(listName);
         ListOperationMenu();
         ListOperationInput();
     }
@@ -99,37 +98,37 @@ public class TaskApp {
             try {
                 int OperationInput = input.nextInt();
                 if (OperationInput == 1) { //view list: works
-                    TaskList.ReadList(listName);
+                    ContactList.ReadList(listName);
                     ListOperationMenu();
                 } else if (OperationInput == 2) { //add an item: works
-                    TaskItem data = TaskList.GetData();
-                    TaskList.AddTaskData(data);
+                    ContactItem data = ContactList.GetData();
+                    ContactList.AddContactData(data);
                     ListOperationMenu();
                     System.out.println("Task added");
                 } else if (OperationInput == 3) { //edit an item
-                    TaskList.ReadList(listName);
-                    TaskList.EditPrompt();
-                    TaskList.EditTaskData();
+                    ContactList.ReadList(listName);
+                    ContactList.EditPrompt();
+                    ContactList.EditTaskData();
                     ListOperationMenu();
                     //System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 4) { //remove an item: works
-                    TaskList.RemovePrompt();
-                    TaskList.RemoveTaskData();
+                    ContactList.RemovePrompt();
+                    ContactList.RemoveTaskData();
                     ListOperationMenu();
                     System.out.println("Task removed");
                 }else if (OperationInput == 5) { //mark an item as completed
-                    //TaskList.MarkTaskAsComplete();
+                    //ContactList.MarkTaskAsComplete();
                     // ListOperationMenu();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 6) { //unmark an item as completed
-                    //TaskList.RemoveTaskAsComplete();
+                    //ContactList.RemoveTaskAsComplete();
                     // ListOperationMenu();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 7) { //save the current list: works
-                    TaskList.WriteToList(listName);
-                    // ListOperationMenu();
+                    ContactList.WriteToList(listName);
+                    ListOperationMenu();
                 }else if (OperationInput == 8) { //quit to the main menu"
-                    TaskMenu();
+                    ContactMenu();
                 } else {
                     System.out.println("invalid input operation, please try again");
                 }

@@ -22,9 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Working on: EditTaskData, skipping input of getDate in TaskList">
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Fixed: EditTaskData by inserting input.nextLine() after the nextInt() function">
+      <change afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/Hardy_p5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/Hardy_p5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" afterDir="false" />
@@ -85,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Hardy5 App">
+  <component name="RunManager" selected="JUnit.TaskListTest">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Hardy_p4" />
@@ -107,20 +117,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BodyMassIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hardy_p2" />
+    <configuration name="TaskListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hardy_p5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BodyMassIndexTest" />
+      <option name="MAIN_CLASS_NAME" value="TaskListTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShapeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hardy_p3" />
+    <configuration name="TaskListTest.newListIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hardy_p5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShapeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="TaskListTest" />
+      <option name="METHOD_NAME" value="newListIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,16 +140,16 @@
       <item itemvalue="Application.App" />
       <item itemvalue="Application.App (1)" />
       <item itemvalue="Application.Hardy5 App" />
-      <item itemvalue="JUnit.BodyMassIndexTest" />
-      <item itemvalue="JUnit.ShapeTest" />
+      <item itemvalue="JUnit.TaskListTest" />
+      <item itemvalue="JUnit.TaskListTest.newListIsEmpty" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskListTest" />
+        <item itemvalue="JUnit.TaskListTest.newListIsEmpty" />
         <item itemvalue="Application.Hardy5 App" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.App (1)" />
-        <item itemvalue="JUnit.ShapeTest" />
-        <item itemvalue="JUnit.BodyMassIndexTest" />
       </list>
     </recent_temporary>
   </component>
@@ -375,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606777798414</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fixed: EditTaskData by inserting input.nextLine() after the nextInt() function">
+      <created>1606780254682</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1606780254682</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -391,7 +409,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edited: Simplified moreInput if statement to a return statement" />
     <MESSAGE value="Fixed: CamelCase of some variables.&#10;Edited: Simplified BmiScore in BodyMassIndex inside BodyMassIndex.java" />
     <MESSAGE value="Created Test for BodyMassIndex.java called BodyMassIndexTest.java" />
     <MESSAGE value="." />
@@ -416,7 +433,8 @@
     <MESSAGE value="Working on: EditTaskData" />
     <MESSAGE value="Working on: EditTaskData, skipping input of getDate" />
     <MESSAGE value="Working on: EditTaskData, skipping input of getDate in TaskList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on: EditTaskData, skipping input of getDate in TaskList" />
+    <MESSAGE value="Fixed: EditTaskData by inserting input.nextLine() after the nextInt() function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed: EditTaskData by inserting input.nextLine() after the nextInt() function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="218" key="#Inspections" timestamp="1606616693755">
@@ -435,10 +453,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="512" y="256" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606763670178" />
-    <state x="100" y="101" width="988" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602042795759">
+    <state x="100" y="101" width="988" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1606847842036">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="100" y="101" width="988" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602042795759" />
+    <state x="100" y="101" width="988" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606847842036" />
     <state x="357" y="247" key="#com.intellij.ide.util.MemberChooser" timestamp="1606325984818">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -459,10 +477,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="257" y="417" key="#com.intellij.refactoring.memberPushDown.PushDownDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602030231711" />
-    <state x="371" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605545696721">
+    <state x="371" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606850733984">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="371" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605545696721" />
+    <state x="371" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606850733984" />
     <state x="277" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606695306858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -479,38 +497,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1921" height="292" key="GridCell.Tab.0.bottom" timestamp="1606779031618">
+    <state width="1168" height="289" key="GridCell.Tab.0.bottom" timestamp="1606850747347">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606779031618" />
-    <state width="1921" height="292" key="GridCell.Tab.0.center" timestamp="1606779031618">
+    <state width="1168" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606850747347" />
+    <state width="1168" height="289" key="GridCell.Tab.0.center" timestamp="1606850747347">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="292" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606779031618" />
-    <state width="1921" height="292" key="GridCell.Tab.0.left" timestamp="1606779031618">
+    <state width="1168" height="289" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606850747347" />
+    <state width="1168" height="289" key="GridCell.Tab.0.left" timestamp="1606850747347">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="292" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606779031618" />
-    <state width="1921" height="292" key="GridCell.Tab.0.right" timestamp="1606779031618">
+    <state width="1168" height="289" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606850747347" />
+    <state width="1168" height="289" key="GridCell.Tab.0.right" timestamp="1606850747347">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="292" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606779031618" />
-    <state width="1921" height="369" key="GridCell.Tab.1.bottom" timestamp="1606768385865">
+    <state width="1168" height="289" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606850747347" />
+    <state width="1168" height="366" key="GridCell.Tab.1.bottom" timestamp="1606849798332">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606768385865" />
-    <state width="1921" height="369" key="GridCell.Tab.1.center" timestamp="1606768385865">
+    <state width="1168" height="366" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
+    <state width="1168" height="366" key="GridCell.Tab.1.center" timestamp="1606849798332">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="369" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606768385865" />
-    <state width="1921" height="369" key="GridCell.Tab.1.left" timestamp="1606768385865">
+    <state width="1168" height="366" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
+    <state width="1168" height="366" key="GridCell.Tab.1.left" timestamp="1606849798332">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="369" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606768385865" />
-    <state width="1921" height="369" key="GridCell.Tab.1.right" timestamp="1606768385865">
+    <state width="1168" height="366" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
+    <state width="1168" height="366" key="GridCell.Tab.1.right" timestamp="1606849798332">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="369" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606768385865" />
+    <state width="1168" height="366" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606849798332" />
     <state x="662" y="242" key="RollbackChangesDialog" timestamp="1606600614724">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -523,10 +541,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="368" y="319" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602034720569" />
-    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601760333559">
+    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1606851180688">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1601760333559" />
+    <state x="247" y="379" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1606851180688" />
     <state x="1240" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606619541166">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -539,6 +557,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="498" y="276" width="924" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1606612424977" />
+    <state x="7" y="4" width="1001" height="1081" key="dock-window-1" timestamp="1606832289365">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="7" y="4" width="1001" height="1081" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1606832289365" />
+    <state x="0" y="0" width="1001" height="1081" key="dock-window-2" timestamp="1606846607823">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="1001" height="1081" key="dock-window-2/0.0.1920.1080@0.0.1920.1080" timestamp="1606846607823" />
+    <state x="0" y="0" width="1001" height="1087" key="dock-window-3" timestamp="1606841274643">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="1001" height="1087" key="dock-window-3/0.0.1920.1080@0.0.1920.1080" timestamp="1606841274643" />
+    <state x="-12" y="0" width="1001" height="1087" key="dock-window-4" timestamp="1606854146432">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-12" y="0" width="1001" height="1087" key="dock-window-4/0.0.1920.1080@0.0.1920.1080" timestamp="1606854146432" />
     <state x="597" y="160" key="new project wizard" timestamp="1606315176593">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -547,10 +581,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="537" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602543443554" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606606075592">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606851288248">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606606075592" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1606851288248" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -563,6 +597,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hardy_p5/src/TaskList.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

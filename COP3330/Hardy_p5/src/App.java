@@ -3,10 +3,6 @@ import java.util.Scanner;
 
 public class App {
     private Scanner input = new Scanner(System.in);
-    private int appInput = 0; //maintains the choice of which app the user chooses
-    private int menuInput = 0;
-    private String listName;
-    private TaskItem data;
 
     //private ContactList contactList;
     public static void main(String[] args) {
@@ -24,18 +20,15 @@ public class App {
     }
 
     private void AppSelectionInput() {//user input methods to select the application
+        //maintains the choice of which app the user chooses
+        int appInput;
         do {
             try {
                 appInput = input.nextInt();
                 if (appInput == 1) {
                     new TaskApp();
-                    //ListMenu();
-                    //MenuInput();
                 } else if (appInput == 2) {
-                    System.out.println("ERROR: Application not available yet");
-                    AppSelection();
-                    //ListMenu();
-                    //MenuInput();
+                    new ContactApp();
                 } else if (appInput == 3) {
                     System.out.println("Exiting Application Selection");
                     System.exit(-1);
@@ -46,6 +39,8 @@ public class App {
 
                 System.out.println("invalid input, please try again");
                 input.next();
+                throw new IllegalArgumentException("ERROR: Invalid input");
+            } catch(IllegalArgumentException e){
                 throw new IllegalArgumentException("ERROR: Invalid input");
             }
         } while (appInput < 2 || appInput > 0);
