@@ -24,11 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Added: new tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/templist" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/templist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/ContactListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/ContactListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskListTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactListTest">
+  <component name="RunManager" selected="JUnit.TaskListTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Hardy_p5" />
@@ -139,10 +139,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskListTest" />
         <item itemvalue="JUnit.ContactListTest" />
         <item itemvalue="JUnit.ContactItemTest" />
         <item itemvalue="JUnit.TaskItemTest" />
-        <item itemvalue="JUnit.TaskListTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -155,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601226802247</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added: Bmi calculator in BodyMassIndex class and created if statements to calculate the category.&#10;Work on: DisplayBmiInfo and DisplayBmiStatitics method, and BodymassIndex class">
-      <created>1601237099199</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1601237099199</updated>
     </task>
     <task id="LOCAL-00005" summary="work on: displaying ArrayList data.&#10;Issue: displaying ArrayList only returns addresses">
       <created>1601339984206</created>
@@ -499,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606880178501</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added: new tests">
+      <created>1606881250715</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1606881250715</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,22 +603,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1168" height="284" key="GridCell.Tab.0.bottom" timestamp="1606880954146">
+    <state width="1168" height="284" key="GridCell.Tab.0.bottom" timestamp="1606881528691">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606880954146" />
-    <state width="1168" height="284" key="GridCell.Tab.0.center" timestamp="1606880954146">
+    <state width="1168" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
+    <state width="1168" height="284" key="GridCell.Tab.0.center" timestamp="1606881528691">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606880954146" />
-    <state width="1168" height="284" key="GridCell.Tab.0.left" timestamp="1606880954146">
+    <state width="1168" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
+    <state width="1168" height="284" key="GridCell.Tab.0.left" timestamp="1606881528691">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606880954146" />
-    <state width="1168" height="284" key="GridCell.Tab.0.right" timestamp="1606880954146">
+    <state width="1168" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
+    <state width="1168" height="284" key="GridCell.Tab.0.right" timestamp="1606881528691">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606880954146" />
+    <state width="1168" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
     <state width="1168" height="362" key="GridCell.Tab.1.bottom" timestamp="1606877212582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -639,10 +639,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606600614724" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606880181985">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606881253751">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606880181985" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606881253751" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

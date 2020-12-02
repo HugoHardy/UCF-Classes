@@ -9,24 +9,22 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TaskListTest {
-    private TaskList TLTest;
-    private String listName = "list3";
+    private final String listName = "list3";
     List<TaskItem> Tasks;
 
     @BeforeEach
     public void test() {
-        TLTest = new TaskList();
+        new TaskList();
         Tasks = new ArrayList<>();
     }
     @Test
     public void addingItemsIncreasesSize(){
-        TLTest = new TaskList();
-        TaskItem data = null;
+        TaskItem data;
         data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-01-01", "Task 2", "My second task");
-        TLTest.AddTaskData(data);
-        assertEquals(2, TLTest.GetListSize());
+        TaskList.AddTaskData(data);
+        assertEquals(2, TaskList.GetListSize());
     }//@Test
     //completingTaskItemChangesStatus()
     //@Test
@@ -34,123 +32,112 @@ public class TaskListTest {
     @Test
     public void editingItemDescriptionFailsWithInvalidIndex(){
         Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
-            TLTest = new TaskList();
-            TaskItem data = null;
+            TaskItem data;
             data = new TaskItem("2020-01-01", "Task 1", "My First task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My 2nd task");
-            TLTest.SetEdit(10, data);
+            TaskList.SetEdit(10, data);
         });
     }
     @Test
     public void editingItemDescriptionSucceedsWithExpectedValue() {
-        TLTest = new TaskList();
-        TaskItem data = null;
+        TaskItem data;
         data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-01-01", "Task 2", "My second task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2022-01-01", "second Task", "My 2nd task");
-        TLTest.SetEdit(1, data);
+        TaskList.SetEdit(1, data);
         assertEquals("My 2nd task", data.getTaskDescription());
     }
     @Test
     public void editingItemDueDateSucceedsWithExpectedValue(){
-        TLTest = new TaskList();
-        TaskItem data = null;
+        TaskItem data;
         data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-02-02", "Task 2", "My second task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-03-03", "Task 2", "My second task");
-        TLTest.SetEdit(1, data);
+        TaskList.SetEdit(1, data);
         assertEquals("2021-03-03", data.getTaskDate());
     }
     @Test
     public void editingItemTitleFailsWithEmptyString(){
         Assertions.assertThrows(IllegalArgumentException.class , () ->{
-            TLTest = new TaskList();
-            TaskItem data = null;
+            TaskItem data;
             data = new TaskItem("2020-01-01", "Task 1", "My First task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "", "My second task");
-            TLTest.SetEdit(1, data);
+            TaskList.SetEdit(1, data);
         });
     }
     @Test
     public void editingItemTitleFailsWithInvalidIndex(){
         Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
-            TLTest = new TaskList();
-            TaskItem data = null;
+            TaskItem data;
             data = new TaskItem("2020-01-01", "Task 1", "My First task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2nd", "My second task");
-            TLTest.SetEdit(10, data);
+            TaskList.SetEdit(10, data);
         });
     }
     @Test
     public void editingItemTitleSucceedsWithExpectedValue(){
-        TLTest = new TaskList();
-        TaskItem data = null;
+        TaskItem data;
         data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-02-02", "Task 2", "My second task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-02-02", "second Task", "My second task");
-        TLTest.SetEdit(1, data);
+        TaskList.SetEdit(1, data);
         assertEquals("second Task", data.getTaskName());
     }
     @Test
     public void editingTaskItemDueDateFailsWithInvalidDateFormat(){
 
         Assertions.assertThrows( NumberFormatException.class ,() -> {
-            TLTest = new TaskList();
-            TaskItem data = null;
+            TaskItem data;
             data = new TaskItem("2020-01-01", "Task 1", "My First task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("03-2022-03", "third Task", "My 3rd task");
-            TLTest.SetEdit(1, data);
+            TaskList.SetEdit(1, data);
         });
     }
     @Test
     public void editingTaskItemDueDateFailsWithInvalidIndex(){
         Assertions.assertThrows( IndexOutOfBoundsException.class ,() -> {
-            TLTest = new TaskList();
-            TaskItem data = null;
+            TaskItem data;
             data = new TaskItem("2020-01-01", "Task 1", "My First task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2022-03-03", "My second task", "Task 2");
-            TLTest.SetEdit(3, data);
+            TaskList.SetEdit(3, data);
         });
     }
     @Test
     public void editingTaskItemDueDateFailsWithInvalidYYYMMDD(){
         Assertions.assertThrows( NumberFormatException.class ,() -> {
-            TLTest = new TaskList();
-            TaskItem data = null;
+            TaskItem data;
             data = new TaskItem("2020-01-01", "Task 1", "My First task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("202-03-03", "third Task", "My 3rd task");
-            TLTest.SetEdit(1, data);
+            TaskList.SetEdit(1, data);
         });
     }
     @Test
-    public void EnteringNonExistanceFileThrowsException(){
-        assertThrows(FileNotFoundException.class, ()-> {
-            TLTest.DataSetter("t");
-        });
+    public void EnteringNonExistenceFileThrowsException(){
+        assertThrows(FileNotFoundException.class, ()-> TaskList.DataSetter("t"));
     }
     //@Test
     //public void gettingItemDescriptionFailsWithInvalidIndex()
@@ -174,46 +161,42 @@ public class TaskListTest {
     //public void gettingItemTitleSucceedsWithValidIndex()
     @Test
     public void newListIsEmpty() throws FileNotFoundException {
-        TLTest = new TaskList();
-        TLTest.ListCreation("templist");
-        TLTest.DisplayLists();
-        assertEquals( "List is empty", TLTest.EmptyList());
+        TaskList.ListCreation("templist");
+        TaskList.DisplayLists();
+        assertEquals( "List is empty", TaskList.EmptyList());
     }
     @Test
     public void removingItemsDecreasesSize(){
-        TLTest = new TaskList();
-        TaskItem data = null;
+        TaskItem data;
         data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-01-01", "Task 2", "My second task");
-        TLTest.AddTaskData(data);
-        TLTest.RemoveTaskData(1);
-        assertEquals(1, TLTest.GetListSize());
+        TaskList.AddTaskData(data);
+        TaskList.RemoveTaskData(1);
+        assertEquals(1, TaskList.GetListSize());
     }
     @Test
     public void removingItemsFailsWithInvalidIndex(){
         Assertions.assertThrows( IndexOutOfBoundsException.class ,() -> {
-            TLTest = new TaskList();
-            TaskItem data = null;
+            TaskItem data;
             data = new TaskItem("2020-01-01", "Task 1", "My First task");
-            TLTest.AddTaskData(data);
+            TaskList.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
-            TLTest.AddTaskData(data);
-            TLTest.RemoveTaskData(5);
+            TaskList.AddTaskData(data);
+            TaskList.RemoveTaskData(5);
         });
     }
     @Test
     public void savedTaskListCanBeLoaded() throws FileNotFoundException {
         TaskItem data;
-        TLTest.ListCreation("templist");
+        TaskList.ListCreation("templist");
         data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddTaskData(data);
+        TaskList.AddTaskData(data);
         data = new TaskItem("2021-01-01", "Task 2", "My second task");
-        TLTest.AddTaskData(data);
-        TLTest = new TaskList();
-        TLTest.WriteToList("templist");
+        TaskList.AddTaskData(data);
+        TaskList.WriteToList("templist");
 
-        assertDoesNotThrow(()-> TLTest.DataSetter(listName));
+        assertDoesNotThrow(()-> TaskList.DataSetter(listName));
     }
     //@Test
     //public void uncompletingTaskItemChangesStatus()
