@@ -20,7 +20,6 @@ public class ContactListTest {
     }
     @Test
     public void addingItemsIncreasesSize(){
-        CLTest = new ContactList();
         ContactItem data;
         data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
         CLTest.AddContactData(data);
@@ -30,8 +29,7 @@ public class ContactListTest {
     }
     @Test
     public void editingItemsFailsWithAllBlankValues(){
-        Assertions.assertThrows(NullPointerException.class , () ->{
-            CLTest = new ContactList();
+        Assertions.assertThrows(IllegalArgumentException.class , () ->{
             ContactItem data;
             data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
             CLTest.AddContactData(data);
@@ -44,7 +42,6 @@ public class ContactListTest {
     @Test
     public void editingItemsFailsWithInvalidIndex(){
         Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
-            CLTest = new ContactList();
             ContactItem data;
             data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
             CLTest.AddContactData(data);
@@ -60,14 +57,12 @@ public class ContactListTest {
     //editingSucceedsWithNonBlankValues()
     @Test
     public void newListIsEmpty() throws FileNotFoundException {
-        CLTest = new ContactList();
         CLTest.ListCreation(listName);
         CLTest.DisplayLists();
         assertEquals( "List is empty", CLTest.EmptyList());
     }
     @Test
     public void removingItemsDecreasesSize(){
-        CLTest = new ContactList();
         ContactItem data;
         data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
         CLTest.AddContactData(data);
@@ -78,7 +73,6 @@ public class ContactListTest {
     }
     @Test
     public void removingItemsFailsWithInvalidIndex(){
-        CLTest = new ContactList();
         ContactItem data;
         data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
         CLTest.AddContactData(data);
@@ -88,5 +82,15 @@ public class ContactListTest {
             CLTest.RemoveContactData(9);
         });
     }
-    //savedContactListCanBeLoaded()
+    @Test
+    public void savedContactListCanBeLoaded() throws FileNotFoundException {
+        ContactItem data;
+        CLTest.ListCreation(listName);
+        data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+        CLTest.AddContactData(data);
+        data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+        CLTest.AddContactData(data);
+        CLTest.WriteToList(listName);
+        Assertions.assertDoesNotThrow( () -> CLTest.DataSetter(listName));
+    }
 }

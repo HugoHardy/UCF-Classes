@@ -194,7 +194,7 @@ public class TaskListTest {
         data = new TaskItem("2021-01-01", "Task 2", "My second task");
         TLTest.AddTaskData(data);
         TLTest = new TaskList();
-        TLTest.WriteToList(listName);
+        TLTest.WriteToList("templist");
 
         assertDoesNotThrow(()-> TLTest.DataSetter(listName));
     }
