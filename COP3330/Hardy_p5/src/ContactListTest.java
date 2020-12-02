@@ -28,50 +28,36 @@ public class ContactListTest {
         CLTest.AddContactData(data);
         assertEquals(2, CLTest.GetListSize());
     }
-    //@Test
-    //completingTaskItemChangesStatus()
-    //@Test
-    //completingTaskItemFailsWithInvalidIndex()
-    //@Test
-    //public void editingItemDescriptionFailsWithInvalidIndex(){
-    /*@Test
-    public void editingItemDescriptionSucceedsWithExpectedValue(){
-        //TLTest = new TaskList();
-        TaskItem data = null;
-        data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddContactData(data);
-        data = new TaskItem("2021-01-01", "Task 2", "My second task");
-        TLTest.AddContactData(data);
-        data = new TaskItem("2020-01-01", "second Task", "My 2nd task");
-        TLTest.SetEdit(1, data);
-        assertEquals("[2020-01-01] second Task: My 2nd task", TLTest.GetTaskData(1));
-    }*/
-    //@Test
-    //public void editingItemDueDateSucceedsWithExpectedValue()
-    //@Test
-    //public void editingItemTitleFailsWithEmptyString()
-    //@Test
-    //public void editingItemTitleFailsWithInvalidIndex()
-    //@Test
-    //public void editingItemTitleSucceedsWithExpectedValue()
-    //@Test
-    //public void editingTaskItemDueDateFailsWithInvalidDateFormat()
-    //@Test
-    //public void editingTaskItemDueDateFailsWithInvalidIndex()
-    //@Test
-    //public void editingTaskItemDueDateFailsWithInvalidYYYMMDD()
-    //@Test
-    //public void gettingItemDescriptionFailsWithInvalidIndex()
-    //@Test
-    //public void gettingItemDescriptionSucceedsWithValidIndex()
-    //@Test
-    //public void gettingItemDueDateFailsWithInvalidIndex()
-    //@Test
-    //public void gettingItemDueDateSucceedsWithValidIndex()
-    //@Test
-    //public void gettingItemTitleFailsWithInvalidIndex()
-    //@Test
-    //public void gettingItemTitleSucceedsWithValidIndex()
+    @Test
+    public void editingItemsFailsWithAllBlankValues(){
+        Assertions.assertThrows(NullPointerException.class , () ->{
+            CLTest = new ContactList();
+            ContactItem data;
+            data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+            CLTest.AddContactData(data);
+            data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+            CLTest.AddContactData(data);
+            data = new ContactItem("", "", "", "");
+            CLTest.SetEdit(1, data);
+        });
+    }
+    @Test
+    public void editingItemsFailsWithInvalidIndex(){
+        Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
+            CLTest = new ContactList();
+            ContactItem data;
+            data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+            CLTest.AddContactData(data);
+            data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+            CLTest.AddContactData(data);
+            data = new ContactItem("jim", "iny", "951-592-4658", "jiminy@pie.edu");
+            CLTest.SetEdit(2, data);
+        });
+    }
+    //editingSucceedsWithBlankFirstName()
+    //editingSucceedsWithBlankLastName()
+    //editingSucceedsWithBlankPhone()
+    //editingSucceedsWithNonBlankValues()
     @Test
     public void newListIsEmpty() throws FileNotFoundException {
         CLTest = new ContactList();
@@ -102,10 +88,5 @@ public class ContactListTest {
             CLTest.RemoveContactData(9);
         });
     }
-    //@Test
-    //public void savedTaskListCanBeLoaded()
-    //@Test
-    //public void uncompletingTaskItemChangesStatus()
-    //@Test
-    //public void uncompletingTaskItemFailsWithInvalidIndex()
+    //savedContactListCanBeLoaded()
 }
