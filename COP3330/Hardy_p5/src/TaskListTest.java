@@ -31,8 +31,19 @@ public class TaskListTest {
     //completingTaskItemChangesStatus()
     //@Test
     //completingTaskItemFailsWithInvalidIndex()
-    //@Test
-    //public void editingItemDescriptionFailsWithInvalidIndex(){
+    @Test
+    public void editingItemDescriptionFailsWithInvalidIndex(){
+        Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
+            TLTest = new TaskList();
+            TaskItem data = null;
+            data = new TaskItem("2020-01-01", "Task 1", "My First task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My second task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My 2nd task");
+            TLTest.SetEdit(10, data);
+        });
+    }
     @Test
     public void editingItemDescriptionSucceedsWithExpectedValue() {
         TLTest = new TaskList();
@@ -53,9 +64,9 @@ public class TaskListTest {
         TLTest.AddTaskData(data);
         data = new TaskItem("2021-02-02", "Task 2", "My second task");
         TLTest.AddTaskData(data);
-        data = new TaskItem("2022-03-03", "second Task", "My 2nd task");
+        data = new TaskItem("2021-03-03", "Task 2", "My second task");
         TLTest.SetEdit(1, data);
-        assertEquals("2022-03-03", data.getTaskDate());
+        assertEquals("2021-03-03", data.getTaskDate());
     }
     @Test
     public void editingItemTitleFailsWithEmptyString(){
@@ -66,7 +77,7 @@ public class TaskListTest {
             TLTest.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
             TLTest.AddTaskData(data);
-            data = new TaskItem("2022-03-03", "", "My 2nd task");
+            data = new TaskItem("2021-02-02", "", "My second task");
             TLTest.SetEdit(1, data);
         });
     }
@@ -79,7 +90,7 @@ public class TaskListTest {
             TLTest.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
             TLTest.AddTaskData(data);
-            data = new TaskItem("2022-03-03", "Task 3", "My 3rd task");
+            data = new TaskItem("2021-02-02", "Task 2nd", "My second task");
             TLTest.SetEdit(10, data);
         });
     }
@@ -91,9 +102,9 @@ public class TaskListTest {
         TLTest.AddTaskData(data);
         data = new TaskItem("2021-02-02", "Task 2", "My second task");
         TLTest.AddTaskData(data);
-        data = new TaskItem("2022-03-03", "third Task", "My 3rd task");
+        data = new TaskItem("2021-02-02", "second Task", "My second task");
         TLTest.SetEdit(1, data);
-        assertEquals("third Task", data.getTaskName());
+        assertEquals("second Task", data.getTaskName());
     }
     @Test
     public void editingTaskItemDueDateFailsWithInvalidDateFormat(){
@@ -118,7 +129,7 @@ public class TaskListTest {
             TLTest.AddTaskData(data);
             data = new TaskItem("2021-02-02", "Task 2", "My second task");
             TLTest.AddTaskData(data);
-            data = new TaskItem("2022-03-03", "third Task", "My 3rd task");
+            data = new TaskItem("2022-03-03", "My second task", "Task 2");
             TLTest.SetEdit(3, data);
         });
     }

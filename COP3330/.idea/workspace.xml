@@ -22,11 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Completed: TestItemTest and ContactListTest">
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Fixed: comments from TaskList where in ContactList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/ContactList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/ContactList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.TaskListTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Hardy_p5" />
@@ -120,12 +118,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactListTest.removingItemsDecreasesSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaskListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hardy_p5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactListTest" />
-      <option name="METHOD_NAME" value="removingItemsDecreasesSize" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="TaskListTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,17 +130,17 @@
     <list>
       <item itemvalue="JUnit.ContactListTest" />
       <item itemvalue="JUnit.ContactItemTest" />
-      <item itemvalue="JUnit.ContactListTest.removingItemsDecreasesSize" />
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.ContactItemTest.creationSucceedsWithBlankEmail" />
+      <item itemvalue="JUnit.TaskListTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskListTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.ContactItemTest" />
         <item itemvalue="JUnit.ContactListTest" />
         <item itemvalue="JUnit.ContactItemTest.creationSucceedsWithBlankEmail" />
-        <item itemvalue="JUnit.ContactListTest.removingItemsDecreasesSize" />
       </list>
     </recent_temporary>
   </component>
@@ -155,13 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601226802247</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Fixed Hardy_p2 pathing">
-      <created>1601226958976</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1601226958976</updated>
     </task>
     <task id="LOCAL-00002" summary="Fixed Hardy_p2 pathing">
       <created>1601226974694</created>
@@ -492,7 +482,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606878672486</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Fixed: comments from TaskList where in ContactList">
+      <created>1606879463656</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1606879463656</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fixed: comments from TaskList where in ContactList">
+      <created>1606879716605</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1606879716605</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -508,7 +512,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added: Sphere extending Shape3D and necessary methods&#10;Completed: All test passed" />
     <MESSAGE value="Created: Class App, TaskItem, TaskList&#10;Created: Menu&#10;Created: TaskItem constructor&#10;Created: array of TaskItem and writing method to storage" />
     <MESSAGE value="Fixed: TaskList -&gt; write: renaming of Item.getTaskname to Item.getTaskName" />
     <MESSAGE value="Fixed: files created correctly&#10;Added: ability of display a list of txt files in current directory&#10;Added: ability to display content of current directory" />
@@ -533,7 +536,8 @@
     <MESSAGE value="Fixed: wrong variable inside isAllEmpty inside ContactItem class" />
     <MESSAGE value="Added: More Tests" />
     <MESSAGE value="Completed: TestItemTest and ContactListTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed: TestItemTest and ContactListTest" />
+    <MESSAGE value="Fixed: comments from TaskList where in ContactList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed: comments from TaskList where in ContactList" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="218" key="#Inspections" timestamp="1606616693755">
@@ -596,22 +600,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1168" height="284" key="GridCell.Tab.0.bottom" timestamp="1606879201691">
+    <state width="1168" height="284" key="GridCell.Tab.0.bottom" timestamp="1606879642806">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606879201691" />
-    <state width="1168" height="284" key="GridCell.Tab.0.center" timestamp="1606879201691">
+    <state width="1168" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606879642806" />
+    <state width="1168" height="284" key="GridCell.Tab.0.center" timestamp="1606879642806">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606879201691" />
-    <state width="1168" height="284" key="GridCell.Tab.0.left" timestamp="1606879201691">
+    <state width="1168" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606879642806" />
+    <state width="1168" height="284" key="GridCell.Tab.0.left" timestamp="1606879642806">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606879201691" />
-    <state width="1168" height="284" key="GridCell.Tab.0.right" timestamp="1606879201691">
+    <state width="1168" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606879642806" />
+    <state width="1168" height="284" key="GridCell.Tab.0.right" timestamp="1606879642806">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606879201691" />
+    <state width="1168" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606879642806" />
     <state width="1168" height="362" key="GridCell.Tab.1.bottom" timestamp="1606877212582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -632,10 +636,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606600614724" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606878674199">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606879720182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606878674199" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606879720182" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -668,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="0" y="0" width="1001" height="1087" key="dock-window-3/0.0.1920.1080@0.0.1920.1080" timestamp="1606841274643" />
-    <state x="-8" y="0" width="1080" height="1087" key="dock-window-4" timestamp="1606878995341">
+    <state x="-8" y="0" width="1080" height="1087" key="dock-window-4" timestamp="1606880101468">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-8" y="0" width="1080" height="1087" key="dock-window-4/0.0.1920.1080@0.0.1920.1080" timestamp="1606878995341" />
+    <state x="-8" y="0" width="1080" height="1087" key="dock-window-4/0.0.1920.1080@0.0.1920.1080" timestamp="1606880101468" />
     <state x="597" y="160" key="new project wizard" timestamp="1606315176593">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
