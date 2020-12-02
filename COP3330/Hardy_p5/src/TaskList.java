@@ -161,7 +161,7 @@ public class TaskList {
             String task = getTaskName();
             String description = getDescriptionName();
             data = new TaskItem(date, task, description);
-            SetEdit(setInput, data);// needs work
+            SetEdit(setInput, data);
         } else {
 
             throw new ArrayIndexOutOfBoundsException("ERROR: Index out of bounds");
@@ -171,14 +171,14 @@ public class TaskList {
     public static void SetEdit(int i, TaskItem data) {
             Tasks.set(i, data);
     }
-    public static TaskItem GetTaskData(int i){
-        return Tasks.get(i);
-    }
 
     private static boolean IsWithinBound(int bounds) {
         return bounds <= Tasks.size();
     }
-    public static void MarkTaskAsComplete(){
+    public static void MarkTaskAsComplete(){// needs work: adds **** to the front of completed tasks
+
+    }
+    public static void RemoveTasksAsComplete(){// needs work: removes **** to the front of completed tasks
 
     }
 

@@ -22,13 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Added: new tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/ContactListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardy_p5/templist" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/templist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/ContactListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/ContactListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskListTest.class" afterDir="false" />
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Cleanup code and removed redundancies">
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601226802247</updated>
-    </task>
-    <task id="LOCAL-00005" summary="work on: displaying ArrayList data.&#10;Issue: displaying ArrayList only returns addresses">
-      <created>1601339984206</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1601339984206</updated>
     </task>
     <task id="LOCAL-00006" summary=".">
       <created>1601340197920</created>
@@ -499,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606881250715</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Cleanup code and removed redundancies">
+      <created>1606881641362</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1606881641362</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -515,7 +510,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed: TaskList -&gt; write: renaming of Item.getTaskname to Item.getTaskName" />
     <MESSAGE value="Fixed: files created correctly&#10;Added: ability of display a list of txt files in current directory&#10;Added: ability to display content of current directory" />
     <MESSAGE value="y" />
     <MESSAGE value="Created: App class for all menu inputs and prints&#10;created: TaskList class and writeList method for the creation of the list&#10;created: TaskItem class to store the data in ram for the task specific inputs" />
@@ -540,7 +534,8 @@
     <MESSAGE value="Completed: TestItemTest and ContactListTest" />
     <MESSAGE value="Fixed: comments from TaskList where in ContactList" />
     <MESSAGE value="Added: new tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: new tests" />
+    <MESSAGE value="Cleanup code and removed redundancies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup code and removed redundancies" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="218" key="#Inspections" timestamp="1606616693755">
@@ -639,10 +634,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606600614724" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606881253751">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606881643083">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606881253751" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606881643083" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
