@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -5,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaskListTest {
@@ -13,7 +15,7 @@ public class TaskListTest {
     List<TaskItem> Tasks;
 
     @BeforeEach
-    public void test() throws FileNotFoundException {
+    public void test() {
         TLTest = new TaskList();
         Tasks = new ArrayList<>();
     }
@@ -32,36 +34,120 @@ public class TaskListTest {
     //completingTaskItemFailsWithInvalidIndex()
     //@Test
     //public void editingItemDescriptionFailsWithInvalidIndex(){
-    /*@Test
-    public void editingItemDescriptionSucceedsWithExpectedValue(){
-        //TLTest = new TaskList();
+    @Test
+    public void editingItemDescriptionSucceedsWithExpectedValue() {
+        TLTest = new TaskList();
         TaskItem data = null;
         data = new TaskItem("2020-01-01", "Task 1", "My First task");
-        TLTest.AddContactData(data);
+        TLTest.AddTaskData(data);
         data = new TaskItem("2021-01-01", "Task 2", "My second task");
-        TLTest.AddContactData(data);
-        data = new TaskItem("2020-01-01", "second Task", "My 2nd task");
+        TLTest.AddTaskData(data);
+        data = new TaskItem("2022-01-01", "second Task", "My 2nd task");
         TLTest.SetEdit(1, data);
-        assertEquals("[2020-01-01] second Task: My 2nd task", TLTest.GetTaskData(1));
-    }*/
-    //@Test
-    //public void editingItemDueDateSucceedsWithExpectedValue()
-    //@Test
-    //public void editingItemTitleFailsWithEmptyString()
-    //@Test
-    //public void editingItemTitleFailsWithInvalidIndex()
-    //@Test
-    //public void editingItemTitleSucceedsWithExpectedValue()
-    //@Test
-    //public void editingTaskItemDueDateFailsWithInvalidDateFormat()
-    //@Test
-    //public void editingTaskItemDueDateFailsWithInvalidIndex()
-    //@Test
-    //public void editingTaskItemDueDateFailsWithInvalidYYYMMDD()
+        assertEquals("My 2nd task", data.getTaskDescription());
+    }
+    @Test
+    public void editingItemDueDateSucceedsWithExpectedValue(){
+        TLTest = new TaskList();
+        TaskItem data = null;
+        data = new TaskItem("2020-01-01", "Task 1", "My First task");
+        TLTest.AddTaskData(data);
+        data = new TaskItem("2021-02-02", "Task 2", "My second task");
+        TLTest.AddTaskData(data);
+        data = new TaskItem("2022-03-03", "second Task", "My 2nd task");
+        TLTest.SetEdit(1, data);
+        assertEquals("2022-03-03", data.getTaskDate());
+    }
+    @Test
+    public void editingItemTitleFailsWithEmptyString(){
+        Assertions.assertThrows(IllegalArgumentException.class , () ->{
+            TLTest = new TaskList();
+            TaskItem data = null;
+            data = new TaskItem("2020-01-01", "Task 1", "My First task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My second task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2022-03-03", "", "My 2nd task");
+            TLTest.SetEdit(1, data);
+        });
+    }
+    @Test
+    public void editingItemTitleFailsWithInvalidIndex(){
+        Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
+            TLTest = new TaskList();
+            TaskItem data = null;
+            data = new TaskItem("2020-01-01", "Task 1", "My First task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My second task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2022-03-03", "Task 3", "My 3rd task");
+            TLTest.SetEdit(10, data);
+        });
+    }
+    @Test
+    public void editingItemTitleSucceedsWithExpectedValue(){
+        TLTest = new TaskList();
+        TaskItem data = null;
+        data = new TaskItem("2020-01-01", "Task 1", "My First task");
+        TLTest.AddTaskData(data);
+        data = new TaskItem("2021-02-02", "Task 2", "My second task");
+        TLTest.AddTaskData(data);
+        data = new TaskItem("2022-03-03", "third Task", "My 3rd task");
+        TLTest.SetEdit(1, data);
+        assertEquals("third Task", data.getTaskName());
+    }
+    @Test
+    public void editingTaskItemDueDateFailsWithInvalidDateFormat(){
+
+        Assertions.assertThrows( NumberFormatException.class ,() -> {
+            TLTest = new TaskList();
+            TaskItem data = null;
+            data = new TaskItem("2020-01-01", "Task 1", "My First task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My second task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("03-2022-03", "third Task", "My 3rd task");
+            TLTest.SetEdit(1, data);
+        });
+    }
+    @Test
+    public void editingTaskItemDueDateFailsWithInvalidIndex(){
+        Assertions.assertThrows( IndexOutOfBoundsException.class ,() -> {
+            TLTest = new TaskList();
+            TaskItem data = null;
+            data = new TaskItem("2020-01-01", "Task 1", "My First task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My second task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2022-03-03", "third Task", "My 3rd task");
+            TLTest.SetEdit(3, data);
+        });
+    }
+    @Test
+    public void editingTaskItemDueDateFailsWithInvalidYYYMMDD(){
+        Assertions.assertThrows( NumberFormatException.class ,() -> {
+            TLTest = new TaskList();
+            TaskItem data = null;
+            data = new TaskItem("2020-01-01", "Task 1", "My First task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My second task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("202-03-03", "third Task", "My 3rd task");
+            TLTest.SetEdit(1, data);
+        });
+    }
     //@Test
     //public void gettingItemDescriptionFailsWithInvalidIndex()
     //@Test
-    //public void gettingItemDescriptionSucceedsWithValidIndex()
+    //public void gettingItemDescriptionSucceedsWithValidIndex(){
+    //    TLTest = new TaskList();
+    //    TaskItem data = null;
+    //    data = new TaskItem("2020-01-01", "Task 1", "My First task");
+    //    TLTest.AddTaskData(data);
+    //    data = new TaskItem("2021-02-02", "Task 2", "My second task");
+    //    TLTest.AddTaskData(data);
+    //    Assertions.assertEquals("My second task", TLTest.get(1));
+    //}
     //@Test
     //public void gettingItemDueDateFailsWithInvalidIndex()
     //@Test
@@ -77,12 +163,32 @@ public class TaskListTest {
         TLTest.DisplayLists();
         assertEquals( "List is empty", TLTest.EmptyList());
     }
-    //@Test
-    //public void removingItemsDecreasesSize()
+    @Test
+    public void removingItemsDecreasesSize(){
+        TLTest = new TaskList();
+        TaskItem data = null;
+        data = new TaskItem("2020-01-01", "Task 1", "My First task");
+        TLTest.AddTaskData(data);
+        data = new TaskItem("2021-01-01", "Task 2", "My second task");
+        TLTest.AddTaskData(data);
+        TLTest.RemoveTaskData(1);
+        assertEquals(1, TLTest.GetListSize());
+    }
     //@Test
     //public void removingItemsFailsWithInvalidIndex()
-    //@Test
-    //public void savedTaskListCanBeLoaded()
+    @Test
+    public void savedTaskListCanBeLoaded() throws FileNotFoundException {
+        TaskItem data;
+        TLTest.ListCreation("templist");
+        data = new TaskItem("2020-01-01", "Task 1", "My First task");
+        TLTest.AddTaskData(data);
+        data = new TaskItem("2021-01-01", "Task 2", "My second task");
+        TLTest.AddTaskData(data);
+        TLTest = new TaskList();
+        TLTest.WriteToList(listName);
+
+        assertDoesNotThrow(()-> TLTest.DataSetter(listName));
+    }
     //@Test
     //public void uncompletingTaskItemChangesStatus()
     //@Test

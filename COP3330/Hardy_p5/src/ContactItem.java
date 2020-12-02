@@ -12,7 +12,6 @@ public class ContactItem {
                 if (isFirstNameValid(Firstname)) {
                     Firstname = " ";
                 } else {
-                    System.out.println("Firstname is valid");
                     this.Firstname = FirstName;
                 }
                 if (isLastNameValid(LastName)) {
@@ -23,7 +22,6 @@ public class ContactItem {
                     phoneNumber = " ";
 
                 } else {
-                    System.out.println("Firstname is valid");
                     this.phoneNumber = phoneNumber;
                 }
                 if (isEMailValid(eMail)) {

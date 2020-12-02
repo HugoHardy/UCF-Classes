@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class TaskItemTest {
 
-//@Test
+    @Test
     public void creatingTaskItemFailsWithInvalidDueDate(){
         Assertions.assertThrows( IllegalArgumentException.class ,() -> {
             new TaskItem("", "task 1", "this is a bad task");
@@ -21,13 +21,17 @@ public class TaskItemTest {
     public void creatingTaskItemSucceedsWithValidDueDate(){
         Assertions.assertDoesNotThrow( () -> new TaskItem("2020-10-15", "task 1", "this is a good task"));
     }
-    //creatingTaskItemSucceedsWithValidTitle()
     @Test
-    public void settingTaskItemDueDateFailsWithInvalidDate(){
+    public void creatingTaskItemSucceedsWithValidTitle(){
+        Assertions.assertDoesNotThrow( () -> new TaskItem("2020-10-15", "task 1", "this is a good task"));
+
+    }
+    @Test
+    public void settingTaskItemDueDateFailsWithInvalidDate() throws Exception {
         assertFalse(TaskItem.isDateValid("2020-10-15"));
     }
     @Test
-    public void settingTaskItemDueDateSucceedsWithValidDate(){
+    public void settingTaskItemDueDateSucceedsWithValidDate() throws Exception {
         assertFalse(TaskItem.isDateValid("2020-10-15"));
     }
     @Test

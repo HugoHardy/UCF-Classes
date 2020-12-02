@@ -14,7 +14,7 @@ public class ContactListTest {
     List<ContactItem> Contacts;
 
     @BeforeEach
-    public void test() throws FileNotFoundException {
+    public void test() {
         CLTest = new ContactList();
         Contacts = new ArrayList<>();
     }
@@ -87,7 +87,7 @@ public class ContactListTest {
         CLTest.AddContactData(data);
         data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
         CLTest.AddContactData(data);
-        CLTest.RemoveTaskData(1);
+        CLTest.RemoveContactData(1);
         assertEquals(1, CLTest.GetListSize());
     }
     @Test
@@ -99,7 +99,7 @@ public class ContactListTest {
         data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
         CLTest.AddContactData(data);
         Assertions.assertThrows(IndexOutOfBoundsException.class , () ->{
-            CLTest.RemoveTaskData(1);
+            CLTest.RemoveContactData(9);
         });
     }
     //@Test

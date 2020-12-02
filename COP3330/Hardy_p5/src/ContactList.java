@@ -64,7 +64,7 @@ public class ContactList {
             System.out.println(EmptyList());
         } else {
             for (ContactItem Item : Contacts) {
-                System.out.println(i + ")" + "first name: " +  Item.getFirstName() + "Last name: " + Item.getLastName() + "\nPhone:  " + Item.getphoneNumber() + "\nEmail: " + Item.getPhoneNumber());
+                System.out.println(i + ")" + "first name: " +  Item.getFirstName() + "\nLast name: " + Item.getLastName() + "\nPhone:  " + Item.getphoneNumber() + "\nEmail: " + Item.getPhoneNumber());
                 i++;
             }
         }
@@ -188,7 +188,7 @@ public class ContactList {
     public static void RemovePrompt(){
         System.out.println("Please choose task to remove: ");
     }
-    public static void RemoveTaskData(int i){
+    public static void RemoveContactData(int i){
         Contacts.remove(i);
     }
 }

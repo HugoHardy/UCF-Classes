@@ -183,8 +183,8 @@ public class TaskList {
         System.out.println("Please choose task to remove: ");
     }
 
-    public static void RemoveTaskData() {
-        Tasks.remove(input.nextInt());
+    public static void RemoveTaskData(int i) {
+        Tasks.remove(i);
     }
 
 }

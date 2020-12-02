@@ -33,7 +33,22 @@ public class TaskItem {
     }
 
     public static boolean isDateValid(String date) {
-        return date.isEmpty() || date.equals(" ") || date.equals(null);
+        //yyyy-mm-dd
+        //0123456789
+        try {
+            if (!(date.isEmpty() || date.equals(" ") || date.equals(null))) {
+                int year = Integer.parseInt(date.substring(0, 4));
+                int month = Integer.parseInt(date.substring(5, 7));
+                int day = Integer.parseInt(date.substring(8));
+
+                if (year <= 9999 || year >= 1000 || month <= 12 || month >= 1 || day <= 31 || day >= 1) {
+                    return false;
+                }
+            }
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException("ERROR: Date format invalid, enter yyyy-MM-dd format: ");
+        }
+        return false;
     }
 
     public String getTaskName() {

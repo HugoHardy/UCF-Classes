@@ -88,10 +88,8 @@ public class ContactApp {
         System.out.println("2) add an item");
         System.out.println("3) edit an item");
         System.out.println("4) remove an item");
-        System.out.println("5) mark an item as completed");
-        System.out.println("6) unmark an item as completed");
-        System.out.println("7) save the current list");
-        System.out.println("8) quit to the main menu");
+        System.out.println("5) save the current list");
+        System.out.println("6) quit to the main menu");
     }
     private void ListOperationInput(){
         do {
@@ -104,27 +102,18 @@ public class ContactApp {
                     ContactItem data = ContactList.GetData();
                     ContactList.AddContactData(data);
                     ListOperationMenu();
-                    System.out.println("Task added");
+                    System.out.println("contact added");
                 } else if (OperationInput == 3) { //edit an item
                     ContactList.ReadList(listName);
                     ContactList.EditPrompt();
                     ContactList.EditTaskData();
                     ListOperationMenu();
-                    //System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 4) { //remove an item: works
                     ContactList.RemovePrompt();
-                    ContactList.RemoveTaskData(input.nextInt());
+                    ContactList.RemoveContactData(input.nextInt());
                     ListOperationMenu();
-                    System.out.println("Task removed");
-                }else if (OperationInput == 5) { //mark an item as completed
-                    //ContactList.MarkTaskAsComplete();
-                    // ListOperationMenu();
-                    System.out.println("ERROR: Operation unavailable");
-                }else if (OperationInput == 6) { //unmark an item as completed
-                    //ContactList.RemoveTaskAsComplete();
-                    // ListOperationMenu();
-                    System.out.println("ERROR: Operation unavailable");
-                }else if (OperationInput == 7) { //save the current list: works
+                    System.out.println("contact removed");
+                }else if (OperationInput == 5) { //save the current list: works
                     ContactList.WriteToList(listName);
                     ListOperationMenu();
                 }else if (OperationInput == 8) { //quit to the main menu"
