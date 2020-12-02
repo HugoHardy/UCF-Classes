@@ -23,7 +23,7 @@ public class ContactList {
     public static void WriteToList(String FileName) { //writes the list to the specified .txt file
         try(Formatter output = new Formatter(FileName)) {
             for (ContactItem cItem : Contacts) {
-                output.format("First name: %s Last name: %s phonenumber: %s Email: %s\n", cItem.getFirstName(), cItem.getLastName() ,cItem.getphoneNumber(), cItem.getPhoneNumber());
+                output.format("First name: %s Last name: %s phonenumber: %s Email: %s\n", cItem.getFirstName(), cItem.get_LastName() ,cItem.get_phoneNumber(), cItem.get_phoneNumber());
             }
         } catch(NullPointerException e){
             throw new NullPointerException("ERROR: Data not saved");
@@ -32,8 +32,7 @@ public class ContactList {
         }
     }
     public static void DisplayLists(){
-        try
-        {
+        try {
             String[] pathnames;
 
             File f = new File(".");
@@ -64,7 +63,7 @@ public class ContactList {
             System.out.println(EmptyList());
         } else {
             for (ContactItem Item : Contacts) {
-                System.out.println(i + ")" + "first name: " +  Item.getFirstName() + "\nLast name: " + Item.getLastName() + "\nPhone:  " + Item.getphoneNumber() + "\nEmail: " + Item.getPhoneNumber());
+                System.out.println(i + ")" + "first name: " +  Item.getFirstName() + "\nLast name: " + Item.get_LastName() + "\nPhone:  " + Item.get_phoneNumber() + "\nEmail: " + Item.getEmail());
                 i++;
             }
         }
@@ -88,10 +87,10 @@ public class ContactList {
             ContactItem data;
             while (content != null) {
                 try {
-                    String firstName = content.substring(content.indexOf("[") + 1, content.indexOf("]"));
-                    String lastName = content;
-                    String phoneNumber = content.substring(content.indexOf("]") + 2, content.indexOf(":"));
-                    String eMail = content.substring(content.indexOf(":") + 2);
+                    String firstName = content.substring(content.indexOf("First name:") + 1, content.indexOf("Last name:"));
+                    String lastName = content.substring(content.indexOf("Last name:") + 2, content.indexOf("phonenumber:"));;
+                    String phoneNumber = content.substring(content.indexOf("phonenumber:") + 2, content.indexOf("Email:"));
+                    String eMail = content.substring(content.indexOf("Email:") + 2);
                     data = new ContactItem(firstName, lastName, phoneNumber, eMail);
                     AddContactData(data);
                     content = read.readLine();
@@ -123,67 +122,63 @@ public class ContactList {
 
     private static String getFirstName(){
         System.out.println();
-        System.out.print("Please enter Date with the YYYY-MM-DD format: ");
+        System.out.print("Please enter first name: ");
         String fName = input.nextLine();
         if(fName == null || fName== ""){
-            return "";
+            return " ";
         }
         return fName;
     }
     private static String getLastName(){
         System.out.println();
-        System.out.print("Please enter task name: ");
+        System.out.print("Please enter last name: ");
         String lName = input.nextLine();
         if(lName == null || lName == ""){
-            return "";
+            return " ";
         }
         return lName;
     }
     private static String getPhoneNumber(){
         System.out.println();
-        System.out.println("Please enter task description: ");
+        System.out.print("Please enter phonenumber: ");
         String fName = input.nextLine();
         if(fName == null || fName== ""){
-            return "";
+            return " ";
         }
         return fName;
     }
     private static String getEMail(){
         System.out.println();
-        System.out.println("Please enter task description: ");
+        System.out.println("Please enter Email address: ");
         String eMail = input.nextLine();
         if(eMail == null || eMail == ""){
-            return "";
+            return " ";
         }
         return eMail;
     }
     public static void EditPrompt(){
-        System.out.print("Please choose a task to edit: ");
+        System.out.print("Please choose a contact to edit: ");
     }
     public static void EditTaskData(){
         ContactItem data;
         int setInput = input.nextInt();
         input.nextLine();
         try{
-            if(IsWithinBound(setInput)) {
                 String firstName = getFirstName();
                 String lastName = getLastName();
                 String phoneNumber = getPhoneNumber();
                 String eMail = getEMail();
                 data = new ContactItem(firstName, lastName, phoneNumber, eMail);
-                SetEdit(setInput, data);// needs work
-            }
+                SetEdit(setInput, data);
         } catch (InputMismatchException e) {
             EditTaskData();
             throw new IllegalArgumentException("Not valid argument");
-
+        } catch (ArrayIndexOutOfBoundsException e){
+            throw new IndexOutOfBoundsException("ERROR: Invalid index! ");
         }
     }
     public static void SetEdit(int i, ContactItem data){
         Contacts.set(i, data);
-    }
-    private static boolean IsWithinBound(int bounds){
-        return bounds <= Contacts.size();
     }
     public static void RemovePrompt(){
         System.out.println("Please choose task to remove: ");

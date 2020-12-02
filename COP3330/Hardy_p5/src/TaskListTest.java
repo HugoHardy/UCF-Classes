@@ -6,8 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TaskListTest {
     private TaskList TLTest;
@@ -174,8 +173,18 @@ public class TaskListTest {
         TLTest.RemoveTaskData(1);
         assertEquals(1, TLTest.GetListSize());
     }
-    //@Test
-    //public void removingItemsFailsWithInvalidIndex()
+    @Test
+    public void removingItemsFailsWithInvalidIndex(){
+        Assertions.assertThrows( IndexOutOfBoundsException.class ,() -> {
+            TLTest = new TaskList();
+            TaskItem data = null;
+            data = new TaskItem("2020-01-01", "Task 1", "My First task");
+            TLTest.AddTaskData(data);
+            data = new TaskItem("2021-02-02", "Task 2", "My second task");
+            TLTest.AddTaskData(data);
+            TLTest.RemoveTaskData(5);
+        });
+    }
     @Test
     public void savedTaskListCanBeLoaded() throws FileNotFoundException {
         TaskItem data;
