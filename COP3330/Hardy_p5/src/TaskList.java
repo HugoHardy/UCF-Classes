@@ -77,11 +77,13 @@ public class TaskList {
         if (!FileName.endsWith(".txt")) {
             FileName = FileName + ".txt";
         }
-        try {
-            File file = new File("." + "\\" + FileName);
-            BufferedReader read = new BufferedReader(new FileReader(file));
-            String content;
-            content = read.readLine();
+
+
+            try {
+                File file = new File("." + "\\" + FileName);
+                BufferedReader read = new BufferedReader(new FileReader(file));
+                String content;
+                content = read.readLine();
             if (content == null) {
                 System.out.println("List is empty");
             } else {
@@ -96,12 +98,19 @@ public class TaskList {
                 }
             }
         } catch(FileNotFoundException e){
+                e.getMessage();
             throw new FileNotFoundException("ERROR: File does not exist");
+            //System.out.println("ERROR: File does not exist, please choose existing file");
+            //newFileSelection();
         }catch (NullPointerException e) {
             throw new NullPointerException("ERROR: data null!");
         }
 
 
+    }
+    private static String newFileSelection(){
+
+        return input.nextLine();
     }
 
     public static TaskItem GetData() {

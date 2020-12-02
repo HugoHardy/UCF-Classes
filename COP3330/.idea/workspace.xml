@@ -22,8 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Cleanup code and removed redundancies">
+    <list default="true" id="68ec2ebb-239d-4b36-abd9-ac6b2a92e6b1" name="Default Changelist" comment="Started: work on MarkTaskAsComplete and RemoveTasksAsComplete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hardy_p5/src/TaskListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hardy_p5/TaskListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hardy_p5/TaskListTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TaskListTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.ContactListTest" />
         <item itemvalue="JUnit.ContactItemTest" />
         <item itemvalue="JUnit.TaskItemTest" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -150,13 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601226802247</updated>
-    </task>
-    <task id="LOCAL-00006" summary=".">
-      <created>1601340197920</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1601340197920</updated>
     </task>
     <task id="LOCAL-00007" summary="Fixed: acquired data within the bmi instead of their addresses. &#10;Moved: bmi category calculator from BodyMassIndex.java &gt; BodyMassIndex method to app.java &gt;  displayBmiInfo method&#10;Added: bmi average calculator to displayBmiStatics">
       <created>1601345654570</created>
@@ -494,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606881641362</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Started: work on MarkTaskAsComplete and RemoveTasksAsComplete">
+      <created>1606881810966</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1606881810966</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -510,7 +514,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed: files created correctly&#10;Added: ability of display a list of txt files in current directory&#10;Added: ability to display content of current directory" />
     <MESSAGE value="y" />
     <MESSAGE value="Created: App class for all menu inputs and prints&#10;created: TaskList class and writeList method for the creation of the list&#10;created: TaskItem class to store the data in ram for the task specific inputs" />
     <MESSAGE value="Created: comments to keep track of what each method does" />
@@ -535,7 +538,8 @@
     <MESSAGE value="Fixed: comments from TaskList where in ContactList" />
     <MESSAGE value="Added: new tests" />
     <MESSAGE value="Cleanup code and removed redundancies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup code and removed redundancies" />
+    <MESSAGE value="Started: work on MarkTaskAsComplete and RemoveTasksAsComplete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started: work on MarkTaskAsComplete and RemoveTasksAsComplete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="218" key="#Inspections" timestamp="1606616693755">
@@ -598,22 +602,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601226834351" />
-    <state width="1168" height="284" key="GridCell.Tab.0.bottom" timestamp="1606881528691">
+    <state width="1168" height="284" key="GridCell.Tab.0.bottom" timestamp="1606882804523">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
-    <state width="1168" height="284" key="GridCell.Tab.0.center" timestamp="1606881528691">
+    <state width="1168" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606882804523" />
+    <state width="1168" height="284" key="GridCell.Tab.0.center" timestamp="1606882804523">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
-    <state width="1168" height="284" key="GridCell.Tab.0.left" timestamp="1606881528691">
+    <state width="1168" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606882804523" />
+    <state width="1168" height="284" key="GridCell.Tab.0.left" timestamp="1606882804523">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
-    <state width="1168" height="284" key="GridCell.Tab.0.right" timestamp="1606881528691">
+    <state width="1168" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606882804523" />
+    <state width="1168" height="284" key="GridCell.Tab.0.right" timestamp="1606882804523">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1168" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606881528691" />
+    <state width="1168" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606882804523" />
     <state width="1168" height="362" key="GridCell.Tab.1.bottom" timestamp="1606877212582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -634,10 +638,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606600614724" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606881643083">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606881818221">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606881643083" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1606881818221" />
     <state x="368" y="319" key="chooseDestDirectoryDialog" timestamp="1602034720569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
