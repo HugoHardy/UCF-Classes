@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ContactListTest {
@@ -51,10 +52,42 @@ public class ContactListTest {
             CLTest.SetEdit(2, data);
         });
     }
-    //editingSucceedsWithBlankFirstName()
-    //editingSucceedsWithBlankLastName()
-    //editingSucceedsWithBlankPhone()
-    //editingSucceedsWithNonBlankValues()
+    @Test
+    public void editingSucceedsWithBlankFirstName(){
+        ContactItem data;
+        data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+        CLTest.AddContactData(data);
+        data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+        CLTest.AddContactData(data);
+        assertDoesNotThrow(()->CLTest.SetEdit(1, new ContactItem("", "iny", "951-592-4658", "jiminy@pie.edu")));
+    }
+    @Test
+    public void editingSucceedsWithBlankLastName(){
+        ContactItem data;
+        data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+        CLTest.AddContactData(data);
+        data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+        CLTest.AddContactData(data);
+        assertDoesNotThrow(()->CLTest.SetEdit(1, new ContactItem("Jim", "", "951-592-4658", "jiminy@pie.edu")));
+    }
+    @Test
+    public void editingSucceedsWithBlankPhone(){
+        ContactItem data;
+        data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+        CLTest.AddContactData(data);
+        data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+        CLTest.AddContactData(data);
+        assertDoesNotThrow(()->CLTest.SetEdit(1, new ContactItem("Jim", "iny", "", "jiminy@pie.edu")));
+    }
+    @Test
+    public void editingSucceedsWithNonBlankValues(){
+        ContactItem data;
+        data = new ContactItem("John", "Deo", "555-123-1234", "unknown@cia.gov");
+        CLTest.AddContactData(data);
+        data = new ContactItem("Davy", "Jones", "123-456-1234", "under@sea.org");
+        CLTest.AddContactData(data);
+        assertDoesNotThrow(()->CLTest.SetEdit(1, new ContactItem("Jim", "iny", "951-592-4658", "jiminy@pie.edu")));
+    }
     @Test
     public void newListIsEmpty() throws FileNotFoundException {
         CLTest.ListCreation(listName);
