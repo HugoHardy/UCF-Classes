@@ -54,19 +54,23 @@ public class ContactList {
     }
 
     public static void ReadList(String FileName) { //reads the data specified folder
-        if (!FileName.endsWith(".txt")) {
-            FileName = FileName + ".txt";
-        }
-        System.out.println("Reading: " + FileName);
-        File file = new File("." + "\\" + FileName);
-        int i = 0;
-        if (Contacts.get(i) == null) {
-            System.out.println(EmptyList());
-        } else {
-            for (ContactItem Item : Contacts) {
-                System.out.println(i + ")" + "first name: " + Item.getFirstName() + "\nLast name: " + Item.get_LastName() + "\nPhone:  " + Item.get_phoneNumber() + "\nEmail: " + Item.getEmail());
-                i++;
+        try {
+            if (!FileName.endsWith(".txt")) {
+                FileName = FileName + ".txt";
             }
+            System.out.println("Reading: " + FileName);
+            File file = new File("." + "\\" + FileName);
+            int i = 0;
+            if (Contacts.get(i) == null) {
+                System.out.println(EmptyList());
+            } else {
+                for (ContactItem Item : Contacts) {
+                    System.out.println(i + ")" + "first name: " + Item.getFirstName() + "\nLast name: " + Item.get_LastName() + "\nPhone:  " + Item.get_phoneNumber() + "\nEmail: " + Item.getEmail());
+                    i++;
+                }
+            }
+        } catch(IndexOutOfBoundsException e){
+            throw new IndexOutOfBoundsException("ERROR: Could not read list");
         }
 
     }
@@ -92,7 +96,6 @@ public class ContactList {
                 try {
                     String firstName = content.substring(content.indexOf("First name:") + 1, content.indexOf("Last name:"));
                     String lastName = content.substring(content.indexOf("Last name:") + 2, content.indexOf("phonenumber:"));
-                    ;
                     String phoneNumber = content.substring(content.indexOf("phonenumber:") + 2, content.indexOf("Email:"));
                     String eMail = content.substring(content.indexOf("Email:") + 2);
                     data = new ContactItem(firstName, lastName, phoneNumber, eMail);
@@ -135,7 +138,7 @@ public class ContactList {
 
     private static String getFirstName() {
         String fName = input.nextLine();
-        if (fName == null || fName == "") {
+        if (fName == null || fName.equals("")) {
             return " ";
         }
         return fName;
@@ -143,7 +146,7 @@ public class ContactList {
 
     private static String getLastName() {
         String lName = input.nextLine();
-        if (lName == null || lName == "") {
+        if (lName == null || lName.equals("")) {
             return " ";
         }
         return lName;
@@ -151,7 +154,7 @@ public class ContactList {
 
     private static String getPhoneNumber() {
         String fName = input.nextLine();
-        if (fName == null || fName == "") {
+        if (fName == null || fName.equals("")) {
             return " ";
         }
         return fName;
@@ -159,7 +162,7 @@ public class ContactList {
 
     private static String getEMail() {
         String eMail = input.nextLine();
-        if (eMail == null || eMail == "") {
+        if (eMail == null || eMail.equals("")) {
             return " ";
         }
         return eMail;
