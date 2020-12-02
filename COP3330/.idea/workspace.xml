@@ -83,7 +83,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactListTest">
+  <component name="RunManager" selected="JUnit.ContactItemTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="Hardy_p5" />
@@ -138,8 +138,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContactListTest" />
         <item itemvalue="JUnit.ContactItemTest" />
+        <item itemvalue="JUnit.ContactListTest" />
         <item itemvalue="JUnit.ContactItemTest.creationSucceedsWithBlankEmail" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.ContactListTest.removingItemsDecreasesSize" />

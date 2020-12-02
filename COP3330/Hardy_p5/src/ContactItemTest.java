@@ -10,15 +10,15 @@ public class ContactItemTest {
     }
     @Test
     public void creationSucceedsWithBlankEmail(){
-        Assertions.assertDoesNotThrow( () -> new ContactItem("john", "smith", "9543192844", ""));
+        Assertions.assertDoesNotThrow( () -> new ContactItem("john", "smith", "954-319-2844", ""));
     }
     @Test
     public void creationSucceedsWithBlankFirstName(){
-        Assertions.assertDoesNotThrow( () -> new ContactItem("", "smith", "9543192844", "johnsmith@doc.tar"));
+        Assertions.assertDoesNotThrow( () -> new ContactItem("", "smith", "954-319-2844", "johnsmith@doc.tar"));
     }
     @Test
     public void creationSucceedsWithBlankLastName(){
-        Assertions.assertDoesNotThrow( () -> new ContactItem("john", "", "9543192844", "johnsmith@doc.tar"));
+        Assertions.assertDoesNotThrow( () -> new ContactItem("john", "", "954-319-2844", "johnsmith@doc.tar"));
     }
     @Test
     public void creationSucceedsWithBlankPhone(){
@@ -27,7 +27,7 @@ public class ContactItemTest {
     }
     @Test
     public void creationSucceedsWithNonBlankValues(){
-        Assertions.assertDoesNotThrow( () -> new ContactItem("john", "smith", "9543192844", "johnsmith@doc.tar"));
+        Assertions.assertDoesNotThrow( () -> new ContactItem("john", "smith", "954-319-2844", "johnsmith@doc.tar"));
 
     }
     //editingFailsWithAllBlankValues()
