@@ -64,7 +64,7 @@ public class ContactItem {
         return phoneNumber.isEmpty() || phoneNumber.equals(null);
     }
     public String getEmail(){
-        return this._phoneNumber;
+        return this._eMail;
     }
     public boolean isEMailValid(String eMail) {
         return eMail.isEmpty() || eMail.equals(null);
