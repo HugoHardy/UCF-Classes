@@ -178,6 +178,9 @@ public class TaskList {
     private static boolean IsWithinBound(int bounds) {
         return bounds <= Tasks.size();
     }
+    public static void MarkTaskAsComplete(){
+
+    }
 
     public static void RemovePrompt() {
         System.out.println("Please choose task to remove: ");

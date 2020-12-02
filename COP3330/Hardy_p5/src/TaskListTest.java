@@ -146,6 +146,12 @@ public class TaskListTest {
             TLTest.SetEdit(1, data);
         });
     }
+    @Test
+    public void EnteringNonExistanceFileThrowsException(){
+        assertThrows(FileNotFoundException.class, ()-> {
+            TLTest.DataSetter("t");
+        });
+    }
     //@Test
     //public void gettingItemDescriptionFailsWithInvalidIndex()
     //@Test

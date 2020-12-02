@@ -118,8 +118,8 @@ public class TaskApp {
                     ListOperationMenu();
                     System.out.println("Task removed");
                 }else if (OperationInput == 5) { //mark an item as completed
-                    //TaskList.MarkTaskAsComplete();
-                    // ListOperationMenu();
+                    TaskList.MarkTaskAsComplete();
+                    //ListOperationMenu();
                     System.out.println("ERROR: Operation unavailable");
                 }else if (OperationInput == 6) { //unmark an item as completed
                     //TaskList.RemoveTaskAsComplete();
